@@ -1,0 +1,40 @@
+# SwaggerClient::MatchScoreBreakdown2017Alliance
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**auto_points** | **Integer** |  | [optional] 
+**teleop_points** | **Integer** |  | [optional] 
+**foul_points** | **Integer** |  | [optional] 
+**adjust_points** | **Integer** |  | [optional] 
+**total_points** | **Integer** |  | [optional] 
+**robot1_auto** | **String** |  | [optional] 
+**robot2_auto** | **String** |  | [optional] 
+**robot3_auto** | **String** |  | [optional] 
+**rotor1_auto** | **BOOLEAN** |  | [optional] 
+**rotor2_auto** | **BOOLEAN** |  | [optional] 
+**auto_fuel_low** | **Integer** |  | [optional] 
+**auto_fuel_high** | **Integer** |  | [optional] 
+**auto_mobility_points** | **Integer** |  | [optional] 
+**auto_rotor_points** | **Integer** |  | [optional] 
+**auto_fuel_points** | **Integer** |  | [optional] 
+**teleop_fuel_points** | **Integer** |  | [optional] 
+**teleop_fuel_low** | **Integer** |  | [optional] 
+**teleop_fuel_high** | **Integer** |  | [optional] 
+**teleop_rotor_points** | **Integer** |  | [optional] 
+**k_pa_ranking_point_achieved** | **BOOLEAN** |  | [optional] 
+**teleop_takeoff_points** | **Integer** |  | [optional] 
+**k_pa_bonus_points** | **Integer** |  | [optional] 
+**rotor_bonus_points** | **Integer** |  | [optional] 
+**rotor1_engaged** | **BOOLEAN** |  | [optional] 
+**rotor2_engaged** | **BOOLEAN** |  | [optional] 
+**rotor3_engaged** | **BOOLEAN** |  | [optional] 
+**rotor4_engaged** | **BOOLEAN** |  | [optional] 
+**rotor_ranking_point_achieved** | **BOOLEAN** |  | [optional] 
+**tech_foul_count** | **Integer** |  | [optional] 
+**foul_count** | **Integer** |  | [optional] 
+**touchpad_near** | **String** |  | [optional] 
+**touchpad_middle** | **String** |  | [optional] 
+**touchpad_far** | **String** |  | [optional] 
+
+
