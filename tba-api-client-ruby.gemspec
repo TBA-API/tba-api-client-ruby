@@ -13,17 +13,17 @@ Swagger Codegen version: 2.3.1
 =end
 
 $:.push File.expand_path("../lib", __FILE__)
-require "swagger_client/version"
+require "tba-api-client-ruby/version"
 
 Gem::Specification.new do |s|
-  s.name        = "swagger_client"
-  s.version     = SwaggerClient::VERSION
+  s.name        = "tba-api-client-ruby"
+  s.version     = TBA API v3 Ruby Client::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Swagger-Codegen"]
   s.email       = [""]
   s.homepage    = "https://github.com/swagger-api/swagger-codegen"
-  s.summary     = "The Blue Alliance API v3 Ruby Gem"
-  s.description = "# Overview    Information and statistics about FIRST Robotics Competition teams and events.   # Authentication   All endpoints require an Auth Key to be passed in the header `X-TBA-Auth-Key`. If you do not have an auth key yet, you can obtain one from your [Account Page](/account).    A `User-Agent` header may need to be set to prevent a 403 Unauthorized error."
+  s.summary     = "A Ruby wrapper for The Blue Alliance"
+  s.description = "A Ruby wrapper for The Blue Alliance"
   # TODO uncommnet and update below with a proper license 
   #s.license     = "Apache 2.0"
   s.required_ruby_version = ">= 1.9"

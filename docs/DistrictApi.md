@@ -1,4 +1,4 @@
-# SwaggerClient::DistrictApi
+# TBA API v3 Ruby Client::DistrictApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -26,16 +26,16 @@ Gets a list of events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -46,7 +46,7 @@ opts = {
 begin
   result = api_instance.get_district_events(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events: #{e}"
 end
 ```
@@ -83,16 +83,16 @@ Gets a list of event keys for events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -103,7 +103,7 @@ opts = {
 begin
   result = api_instance.get_district_events_keys(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events_keys: #{e}"
 end
 ```
@@ -140,16 +140,16 @@ Gets a short-form list of events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -160,7 +160,7 @@ opts = {
 begin
   result = api_instance.get_district_events_simple(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events_simple: #{e}"
 end
 ```
@@ -197,16 +197,16 @@ Gets a list of team district rankings for the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -217,7 +217,7 @@ opts = {
 begin
   result = api_instance.get_district_rankings(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_rankings: #{e}"
 end
 ```
@@ -254,16 +254,16 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -274,7 +274,7 @@ opts = {
 begin
   result = api_instance.get_district_teams(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_teams: #{e}"
 end
 ```
@@ -311,16 +311,16 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -331,7 +331,7 @@ opts = {
 begin
   result = api_instance.get_district_teams_keys(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_teams_keys: #{e}"
 end
 ```
@@ -368,16 +368,16 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -388,7 +388,7 @@ opts = {
 begin
   result = api_instance.get_district_teams_simple(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_teams_simple: #{e}"
 end
 ```
@@ -425,16 +425,16 @@ Gets a list of districts and their corresponding district key, for the given yea
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
 
@@ -445,7 +445,7 @@ opts = {
 begin
   result = api_instance.get_districts_by_year(year, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_districts_by_year: #{e}"
 end
 ```
@@ -482,16 +482,16 @@ Gets a list of team rankings for the Event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -502,7 +502,7 @@ opts = {
 begin
   result = api_instance.get_event_district_points(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_event_district_points: #{e}"
 end
 ```
@@ -539,16 +539,16 @@ Gets an array of districts representing each year the team was in a district. Wi
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::DistrictApi.new
+api_instance = TBA API v3 Ruby Client::DistrictApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -559,7 +559,7 @@ opts = {
 begin
   result = api_instance.get_team_districts(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_team_districts: #{e}"
 end
 ```

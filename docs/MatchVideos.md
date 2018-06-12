@@ -1,4 +1,4 @@
-# SwaggerClient::MatchVideos
+# TBA API v3 Ruby Client::MatchVideos
 
 ## Properties
 Name | Type | Description | Notes

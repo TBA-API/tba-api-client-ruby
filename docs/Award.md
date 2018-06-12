@@ -1,4 +1,4 @@
-# SwaggerClient::Award
+# TBA API v3 Ruby Client::Award
 
 ## Properties
 Name | Type | Description | Notes

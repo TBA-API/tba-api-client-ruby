@@ -1,4 +1,4 @@
-# SwaggerClient::TeamSimple
+# TBA API v3 Ruby Client::TeamSimple
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Match
+# TBA API v3 Ruby Client::Match
 
 ## Properties
 Name | Type | Description | Notes

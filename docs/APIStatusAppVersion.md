@@ -1,4 +1,4 @@
-# SwaggerClient::APIStatusAppVersion
+# TBA API v3 Ruby Client::APIStatusAppVersion
 
 ## Properties
 Name | Type | Description | Notes

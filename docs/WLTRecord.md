@@ -1,4 +1,4 @@
-# SwaggerClient::WLTRecord
+# TBA API v3 Ruby Client::WLTRecord
 
 ## Properties
 Name | Type | Description | Notes

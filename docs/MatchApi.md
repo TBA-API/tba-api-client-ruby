@@ -1,4 +1,4 @@
-# SwaggerClient::MatchApi
+# TBA API v3 Ruby Client::MatchApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -29,16 +29,16 @@ Gets an array of Match Keys for the given event key that have timeseries data. R
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -49,7 +49,7 @@ opts = {
 begin
   result = api_instance.get_event_match_timeseries(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_event_match_timeseries: #{e}"
 end
 ```
@@ -86,16 +86,16 @@ Gets a list of matches for the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -106,7 +106,7 @@ opts = {
 begin
   result = api_instance.get_event_matches(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_event_matches: #{e}"
 end
 ```
@@ -143,16 +143,16 @@ Gets a list of match keys for the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -163,7 +163,7 @@ opts = {
 begin
   result = api_instance.get_event_matches_keys(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_event_matches_keys: #{e}"
 end
 ```
@@ -200,16 +200,16 @@ Gets a short-form list of matches for the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -220,7 +220,7 @@ opts = {
 begin
   result = api_instance.get_event_matches_simple(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_event_matches_simple: #{e}"
 end
 ```
@@ -257,16 +257,16 @@ Gets a `Match` object for the given match key.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 match_key = "match_key_example" # String | TBA Match Key, eg `2016nytr_qm1`
 
@@ -277,7 +277,7 @@ opts = {
 begin
   result = api_instance.get_match(match_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_match: #{e}"
 end
 ```
@@ -314,16 +314,16 @@ Gets a short-form `Match` object for the given match key.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 match_key = "match_key_example" # String | TBA Match Key, eg `2016nytr_qm1`
 
@@ -334,7 +334,7 @@ opts = {
 begin
   result = api_instance.get_match_simple(match_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_match_simple: #{e}"
 end
 ```
@@ -371,16 +371,16 @@ Gets an array of game-specific Match Timeseries objects for the given match key 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 match_key = "match_key_example" # String | TBA Match Key, eg `2016nytr_qm1`
 
@@ -391,7 +391,7 @@ opts = {
 begin
   result = api_instance.get_match_timeseries(match_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_match_timeseries: #{e}"
 end
 ```
@@ -428,16 +428,16 @@ Gets a list of matches for the given team and event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -450,7 +450,7 @@ opts = {
 begin
   result = api_instance.get_team_event_matches(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_team_event_matches: #{e}"
 end
 ```
@@ -488,16 +488,16 @@ Gets a list of match keys for matches for the given team and event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -510,7 +510,7 @@ opts = {
 begin
   result = api_instance.get_team_event_matches_keys(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_team_event_matches_keys: #{e}"
 end
 ```
@@ -548,16 +548,16 @@ Gets a short-form list of matches for the given team and event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -570,7 +570,7 @@ opts = {
 begin
   result = api_instance.get_team_event_matches_simple(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_team_event_matches_simple: #{e}"
 end
 ```
@@ -608,16 +608,16 @@ Gets a list of matches for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -630,7 +630,7 @@ opts = {
 begin
   result = api_instance.get_team_matches_by_year(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_team_matches_by_year: #{e}"
 end
 ```
@@ -668,16 +668,16 @@ Gets a list of match keys for matches for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -690,7 +690,7 @@ opts = {
 begin
   result = api_instance.get_team_matches_by_year_keys(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_team_matches_by_year_keys: #{e}"
 end
 ```
@@ -728,16 +728,16 @@ Gets a short-form list of matches for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::MatchApi.new
+api_instance = TBA API v3 Ruby Client::MatchApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -750,7 +750,7 @@ opts = {
 begin
   result = api_instance.get_team_matches_by_year_simple(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling MatchApi->get_team_matches_by_year_simple: #{e}"
 end
 ```

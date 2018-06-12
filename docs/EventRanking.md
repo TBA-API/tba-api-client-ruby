@@ -1,4 +1,4 @@
-# SwaggerClient::EventRanking
+# TBA API v3 Ruby Client::EventRanking
 
 ## Properties
 Name | Type | Description | Notes

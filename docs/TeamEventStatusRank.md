@@ -1,4 +1,4 @@
-# SwaggerClient::TeamEventStatusRank
+# TBA API v3 Ruby Client::TeamEventStatusRank
 
 ## Properties
 Name | Type | Description | Notes

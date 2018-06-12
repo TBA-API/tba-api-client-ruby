@@ -1,4 +1,4 @@
-# SwaggerClient::EventInsights2018
+# TBA API v3 Ruby Client::EventInsights2018
 
 ## Properties
 Name | Type | Description | Notes

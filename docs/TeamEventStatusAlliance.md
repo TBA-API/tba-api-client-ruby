@@ -1,4 +1,4 @@
-# SwaggerClient::TeamEventStatusAlliance
+# TBA API v3 Ruby Client::TeamEventStatusAlliance
 
 ## Properties
 Name | Type | Description | Notes

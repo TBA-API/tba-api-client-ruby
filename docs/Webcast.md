@@ -1,4 +1,4 @@
-# SwaggerClient::Webcast
+# TBA API v3 Ruby Client::Webcast
 
 ## Properties
 Name | Type | Description | Notes

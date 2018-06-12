@@ -1,4 +1,4 @@
-# SwaggerClient::TeamApi
+# TBA API v3 Ruby Client::TeamApi
 
 All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
@@ -56,16 +56,16 @@ Gets a list of team district rankings for the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -76,7 +76,7 @@ opts = {
 begin
   result = api_instance.get_district_rankings(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_district_rankings: #{e}"
 end
 ```
@@ -113,16 +113,16 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -133,7 +133,7 @@ opts = {
 begin
   result = api_instance.get_district_teams(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_district_teams: #{e}"
 end
 ```
@@ -170,16 +170,16 @@ Gets a list of `Team` objects that competed in events in the given district.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -190,7 +190,7 @@ opts = {
 begin
   result = api_instance.get_district_teams_keys(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_district_teams_keys: #{e}"
 end
 ```
@@ -227,16 +227,16 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
 
@@ -247,7 +247,7 @@ opts = {
 begin
   result = api_instance.get_district_teams_simple(district_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_district_teams_simple: #{e}"
 end
 ```
@@ -284,16 +284,16 @@ Gets a list of `Team` objects that competed in the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -304,7 +304,7 @@ opts = {
 begin
   result = api_instance.get_event_teams(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_event_teams: #{e}"
 end
 ```
@@ -341,16 +341,16 @@ Gets a list of `Team` keys that competed in the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -361,7 +361,7 @@ opts = {
 begin
   result = api_instance.get_event_teams_keys(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_event_teams_keys: #{e}"
 end
 ```
@@ -398,16 +398,16 @@ Gets a short-form list of `Team` objects that competed in the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -418,7 +418,7 @@ opts = {
 begin
   result = api_instance.get_event_teams_simple(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_event_teams_simple: #{e}"
 end
 ```
@@ -455,16 +455,16 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
 
@@ -475,7 +475,7 @@ opts = {
 begin
   result = api_instance.get_event_teams_statuses(event_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_event_teams_statuses: #{e}"
 end
 ```
@@ -512,16 +512,16 @@ Gets a `Team` object for the team referenced by the given key.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -532,7 +532,7 @@ opts = {
 begin
   result = api_instance.get_team(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team: #{e}"
 end
 ```
@@ -569,16 +569,16 @@ Gets a list of awards the given team has won.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -589,7 +589,7 @@ opts = {
 begin
   result = api_instance.get_team_awards(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_awards: #{e}"
 end
 ```
@@ -626,16 +626,16 @@ Gets a list of awards the given team has won in a given year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -648,7 +648,7 @@ opts = {
 begin
   result = api_instance.get_team_awards_by_year(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_awards_by_year: #{e}"
 end
 ```
@@ -686,16 +686,16 @@ Gets an array of districts representing each year the team was in a district. Wi
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -706,7 +706,7 @@ opts = {
 begin
   result = api_instance.get_team_districts(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_districts: #{e}"
 end
 ```
@@ -743,16 +743,16 @@ Gets a list of awards the given team won at the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -765,7 +765,7 @@ opts = {
 begin
   result = api_instance.get_team_event_awards(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_awards: #{e}"
 end
 ```
@@ -803,16 +803,16 @@ Gets a list of matches for the given team and event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -825,7 +825,7 @@ opts = {
 begin
   result = api_instance.get_team_event_matches(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_matches: #{e}"
 end
 ```
@@ -863,16 +863,16 @@ Gets a list of match keys for matches for the given team and event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -885,7 +885,7 @@ opts = {
 begin
   result = api_instance.get_team_event_matches_keys(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_matches_keys: #{e}"
 end
 ```
@@ -923,16 +923,16 @@ Gets a short-form list of matches for the given team and event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -945,7 +945,7 @@ opts = {
 begin
   result = api_instance.get_team_event_matches_simple(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_matches_simple: #{e}"
 end
 ```
@@ -983,16 +983,16 @@ Gets the competition rank and status of the team at the given event.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1005,7 +1005,7 @@ opts = {
 begin
   result = api_instance.get_team_event_status(team_keyevent_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_status: #{e}"
 end
 ```
@@ -1043,16 +1043,16 @@ Gets a list of all events this team has competed at.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1063,7 +1063,7 @@ opts = {
 begin
   result = api_instance.get_team_events(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events: #{e}"
 end
 ```
@@ -1100,16 +1100,16 @@ Gets a list of events this team has competed at in the given year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1122,7 +1122,7 @@ opts = {
 begin
   result = api_instance.get_team_events_by_year(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_by_year: #{e}"
 end
 ```
@@ -1160,16 +1160,16 @@ Gets a list of the event keys for events this team has competed at in the given 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1182,7 +1182,7 @@ opts = {
 begin
   result = api_instance.get_team_events_by_year_keys(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_by_year_keys: #{e}"
 end
 ```
@@ -1220,16 +1220,16 @@ Gets a short-form list of events this team has competed at in the given year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1242,7 +1242,7 @@ opts = {
 begin
   result = api_instance.get_team_events_by_year_simple(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_by_year_simple: #{e}"
 end
 ```
@@ -1280,16 +1280,16 @@ Gets a list of the event keys for all events this team has competed at.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1300,7 +1300,7 @@ opts = {
 begin
   result = api_instance.get_team_events_keys(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_keys: #{e}"
 end
 ```
@@ -1337,16 +1337,16 @@ Gets a short-form list of all events this team has competed at.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1357,7 +1357,7 @@ opts = {
 begin
   result = api_instance.get_team_events_simple(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_simple: #{e}"
 end
 ```
@@ -1394,16 +1394,16 @@ Gets a key-value list of the event statuses for events this team has competed at
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1416,7 +1416,7 @@ opts = {
 begin
   result = api_instance.get_team_events_statuses_by_year(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_statuses_by_year: #{e}"
 end
 ```
@@ -1454,16 +1454,16 @@ Gets a list of matches for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1476,7 +1476,7 @@ opts = {
 begin
   result = api_instance.get_team_matches_by_year(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_matches_by_year: #{e}"
 end
 ```
@@ -1514,16 +1514,16 @@ Gets a list of match keys for matches for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1536,7 +1536,7 @@ opts = {
 begin
   result = api_instance.get_team_matches_by_year_keys(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_matches_by_year_keys: #{e}"
 end
 ```
@@ -1574,16 +1574,16 @@ Gets a short-form list of matches for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1596,7 +1596,7 @@ opts = {
 begin
   result = api_instance.get_team_matches_by_year_simple(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_matches_by_year_simple: #{e}"
 end
 ```
@@ -1634,16 +1634,16 @@ Gets a list of Media (videos / pictures) for the given team and tag.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1656,7 +1656,7 @@ opts = {
 begin
   result = api_instance.get_team_media_by_tag(team_keymedia_tag, , opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_media_by_tag: #{e}"
 end
 ```
@@ -1694,16 +1694,16 @@ Gets a list of Media (videos / pictures) for the given team, tag and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1718,7 +1718,7 @@ opts = {
 begin
   result = api_instance.get_team_media_by_tag_year(team_keymedia_tag, year, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_media_by_tag_year: #{e}"
 end
 ```
@@ -1757,16 +1757,16 @@ Gets a list of Media (videos / pictures) for the given team and year.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1779,7 +1779,7 @@ opts = {
 begin
   result = api_instance.get_team_media_by_year(team_keyyear, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_media_by_year: #{e}"
 end
 ```
@@ -1817,16 +1817,16 @@ Gets a list of year and robot name pairs for each year that a robot name was pro
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1837,7 +1837,7 @@ opts = {
 begin
   result = api_instance.get_team_robots(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_robots: #{e}"
 end
 ```
@@ -1874,16 +1874,16 @@ Gets a `Team_Simple` object for the team referenced by the given key.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1894,7 +1894,7 @@ opts = {
 begin
   result = api_instance.get_team_simple(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_simple: #{e}"
 end
 ```
@@ -1931,16 +1931,16 @@ Gets a list of Media (social media) for the given team.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -1951,7 +1951,7 @@ opts = {
 begin
   result = api_instance.get_team_social_media(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_social_media: #{e}"
 end
 ```
@@ -1988,16 +1988,16 @@ Gets a list of years in which the team participated in at least one competition.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
 
@@ -2008,7 +2008,7 @@ opts = {
 begin
   result = api_instance.get_team_years_participated(team_key, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_years_participated: #{e}"
 end
 ```
@@ -2045,16 +2045,16 @@ Gets a list of `Team` objects, paginated in groups of 500.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 page_num = 56 # Integer | Page number of results to return, zero-indexed
 
@@ -2065,7 +2065,7 @@ opts = {
 begin
   result = api_instance.get_teams(page_num, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams: #{e}"
 end
 ```
@@ -2102,16 +2102,16 @@ Gets a list of `Team` objects that competed in the given year, paginated in grou
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
 
@@ -2124,7 +2124,7 @@ opts = {
 begin
   result = api_instance.get_teams_by_year(yearpage_num, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_by_year: #{e}"
 end
 ```
@@ -2162,16 +2162,16 @@ Gets a list Team Keys that competed in the given year, paginated in groups of 50
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
 
@@ -2184,7 +2184,7 @@ opts = {
 begin
   result = api_instance.get_teams_by_year_keys(yearpage_num, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_by_year_keys: #{e}"
 end
 ```
@@ -2222,16 +2222,16 @@ Gets a list of short form `Team_Simple` objects that competed in the given year,
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
 
@@ -2244,7 +2244,7 @@ opts = {
 begin
   result = api_instance.get_teams_by_year_simple(yearpage_num, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_by_year_simple: #{e}"
 end
 ```
@@ -2282,16 +2282,16 @@ Gets a list of Team keys, paginated in groups of 500. (Note, each page will not 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 page_num = 56 # Integer | Page number of results to return, zero-indexed
 
@@ -2302,7 +2302,7 @@ opts = {
 begin
   result = api_instance.get_teams_keys(page_num, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_keys: #{e}"
 end
 ```
@@ -2339,16 +2339,16 @@ Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'tba-api-client-ruby'
 # setup authorization
-SwaggerClient.configure do |config|
+TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
   config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
 end
 
-api_instance = SwaggerClient::TeamApi.new
+api_instance = TBA API v3 Ruby Client::TeamApi.new
 
 page_num = 56 # Integer | Page number of results to return, zero-indexed
 
@@ -2359,7 +2359,7 @@ opts = {
 begin
   result = api_instance.get_teams_simple(page_num, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_simple: #{e}"
 end
 ```

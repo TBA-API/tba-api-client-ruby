@@ -1,4 +1,4 @@
-# SwaggerClient::EventDistrictPointsTiebreakers
+# TBA API v3 Ruby Client::EventDistrictPointsTiebreakers
 
 ## Properties
 Name | Type | Description | Notes

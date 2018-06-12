@@ -1,4 +1,4 @@
-# SwaggerClient::DistrictList
+# TBA API v3 Ruby Client::DistrictList
 
 ## Properties
 Name | Type | Description | Notes

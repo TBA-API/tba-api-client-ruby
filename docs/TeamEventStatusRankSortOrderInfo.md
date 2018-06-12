@@ -1,4 +1,4 @@
-# SwaggerClient::TeamEventStatusRankSortOrderInfo
+# TBA API v3 Ruby Client::TeamEventStatusRankSortOrderInfo
 
 ## Properties
 Name | Type | Description | Notes

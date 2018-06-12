@@ -1,4 +1,4 @@
-# SwaggerClient::MatchScoreBreakdown2017
+# TBA API v3 Ruby Client::MatchScoreBreakdown2017
 
 ## Properties
 Name | Type | Description | Notes

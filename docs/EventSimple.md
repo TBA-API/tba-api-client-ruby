@@ -1,4 +1,4 @@
-# SwaggerClient::EventSimple
+# TBA API v3 Ruby Client::EventSimple
 
 ## Properties
 Name | Type | Description | Notes

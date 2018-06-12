@@ -1,4 +1,4 @@
-# SwaggerClient::MatchTimeseries2018
+# TBA API v3 Ruby Client::MatchTimeseries2018
 
 ## Properties
 Name | Type | Description | Notes

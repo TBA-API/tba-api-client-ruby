@@ -1,4 +1,4 @@
-# SwaggerClient::Media
+# TBA API v3 Ruby Client::Media
 
 ## Properties
 Name | Type | Description | Notes

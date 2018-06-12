@@ -1,4 +1,4 @@
-# SwaggerClient::TeamRobot
+# TBA API v3 Ruby Client::TeamRobot
 
 ## Properties
 Name | Type | Description | Notes

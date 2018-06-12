@@ -1,4 +1,4 @@
-# SwaggerClient::EventDistrictPointsPoints
+# TBA API v3 Ruby Client::EventDistrictPointsPoints
 
 ## Properties
 Name | Type | Description | Notes

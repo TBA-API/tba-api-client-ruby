@@ -1,4 +1,4 @@
-# SwaggerClient::EliminationAllianceStatus
+# TBA API v3 Ruby Client::EliminationAllianceStatus
 
 ## Properties
 Name | Type | Description | Notes

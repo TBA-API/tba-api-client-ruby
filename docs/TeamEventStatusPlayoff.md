@@ -1,4 +1,4 @@
-# SwaggerClient::TeamEventStatusPlayoff
+# TBA API v3 Ruby Client::TeamEventStatusPlayoff
 
 ## Properties
 Name | Type | Description | Notes

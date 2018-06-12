@@ -1,4 +1,4 @@
-# SwaggerClient::DistrictRankingEventPoints
+# TBA API v3 Ruby Client::DistrictRankingEventPoints
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::MatchAlliance
+# TBA API v3 Ruby Client::MatchAlliance
 
 ## Properties
 Name | Type | Description | Notes

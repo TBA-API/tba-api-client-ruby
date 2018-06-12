@@ -1,4 +1,4 @@
-# SwaggerClient::EventOPRs
+# TBA API v3 Ruby Client::EventOPRs
 
 ## Properties
 Name | Type | Description | Notes

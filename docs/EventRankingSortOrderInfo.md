@@ -1,4 +1,4 @@
-# SwaggerClient::EventRankingSortOrderInfo
+# TBA API v3 Ruby Client::EventRankingSortOrderInfo
 
 ## Properties
 Name | Type | Description | Notes

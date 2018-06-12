@@ -1,4 +1,4 @@
-# SwaggerClient::DistrictRanking
+# TBA API v3 Ruby Client::DistrictRanking
 
 ## Properties
 Name | Type | Description | Notes
