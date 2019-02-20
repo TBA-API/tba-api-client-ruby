@@ -244,6 +244,8 @@ Class | Method | HTTP request | Description
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2017Alliance](docs/MatchScoreBreakdown2017Alliance.md)
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2018](docs/MatchScoreBreakdown2018.md)
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2018Alliance](docs/MatchScoreBreakdown2018Alliance.md)
+ - [TBA API v3 Ruby Client::MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
+ - [TBA API v3 Ruby Client::MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [TBA API v3 Ruby Client::MatchSimple](docs/MatchSimple.md)
  - [TBA API v3 Ruby Client::MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [TBA API v3 Ruby Client::MatchTimeseries2018](docs/MatchTimeseries2018.md)
