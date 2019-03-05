@@ -24,7 +24,7 @@ module TBA API v3 Ruby Client
     # The event_key of the event the award was won at.
     attr_accessor :event_key
 
-    # A list of recipients of the award at the event. Either team_key and/or awardee for individual awards.
+    # A list of recipients of the award at the event. May have either a team_key or an awardee, both, or neither (in the case the award wasn't awarded at the event).
     attr_accessor :recipient_list
 
     # The year this award was won.
