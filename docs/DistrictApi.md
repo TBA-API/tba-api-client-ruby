@@ -36,11 +36,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -93,11 +91,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -150,11 +146,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -207,11 +201,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -264,11 +256,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -321,11 +311,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -378,11 +366,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -435,11 +421,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -492,11 +476,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -549,11 +531,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin

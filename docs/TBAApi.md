@@ -27,9 +27,8 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TBAApi.new
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin

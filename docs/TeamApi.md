@@ -66,11 +66,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -123,11 +121,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -180,11 +176,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -237,11 +231,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-district_key = "district_key_example" # String | TBA District Key, eg `2016fim`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -294,11 +286,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -351,11 +341,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -408,11 +396,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -465,11 +451,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -522,11 +506,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -579,11 +561,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -617,7 +597,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_awards_by_year**
-> Array&lt;Award&gt; get_team_awards_by_year(team_keyyear, opts)
+> Array&lt;Award&gt; get_team_awards_by_year(team_key, year, opts)
 
 
 
@@ -636,17 +616,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_awards_by_year(team_keyyear, opts)
+  result = api_instance.get_team_awards_by_year(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_awards_by_year: #{e}"
@@ -696,11 +673,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -734,7 +709,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_event_awards**
-> Array&lt;Award&gt; get_team_event_awards(team_keyevent_key, opts)
+> Array&lt;Award&gt; get_team_event_awards(team_key, event_key, opts)
 
 
 
@@ -753,17 +728,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_event_awards(team_keyevent_key, opts)
+  result = api_instance.get_team_event_awards(team_key, event_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_awards: #{e}"
@@ -794,7 +766,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_event_matches**
-> Array&lt;Match&gt; get_team_event_matches(team_keyevent_key, opts)
+> Array&lt;Match&gt; get_team_event_matches(team_key, event_key, opts)
 
 
 
@@ -813,17 +785,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_event_matches(team_keyevent_key, opts)
+  result = api_instance.get_team_event_matches(team_key, event_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_matches: #{e}"
@@ -854,7 +823,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_event_matches_keys**
-> Array&lt;String&gt; get_team_event_matches_keys(team_keyevent_key, opts)
+> Array&lt;String&gt; get_team_event_matches_keys(team_key, event_key, opts)
 
 
 
@@ -873,17 +842,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_event_matches_keys(team_keyevent_key, opts)
+  result = api_instance.get_team_event_matches_keys(team_key, event_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_matches_keys: #{e}"
@@ -914,7 +880,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_event_matches_simple**
-> Array&lt;Match&gt; get_team_event_matches_simple(team_keyevent_key, opts)
+> Array&lt;Match&gt; get_team_event_matches_simple(team_key, event_key, opts)
 
 
 
@@ -933,17 +899,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_event_matches_simple(team_keyevent_key, opts)
+  result = api_instance.get_team_event_matches_simple(team_key, event_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_matches_simple: #{e}"
@@ -974,7 +937,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_event_status**
-> TeamEventStatus get_team_event_status(team_keyevent_key, opts)
+> TeamEventStatus get_team_event_status(team_key, event_key, opts)
 
 
 
@@ -993,17 +956,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-event_key = "event_key_example" # String | TBA Event Key, eg `2016nytr`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_event_status(team_keyevent_key, opts)
+  result = api_instance.get_team_event_status(team_key, event_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_event_status: #{e}"
@@ -1053,11 +1013,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -1091,7 +1049,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_events_by_year**
-> Array&lt;Event&gt; get_team_events_by_year(team_keyyear, opts)
+> Array&lt;Event&gt; get_team_events_by_year(team_key, year, opts)
 
 
 
@@ -1110,17 +1068,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_events_by_year(team_keyyear, opts)
+  result = api_instance.get_team_events_by_year(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_by_year: #{e}"
@@ -1151,7 +1106,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_events_by_year_keys**
-> Array&lt;String&gt; get_team_events_by_year_keys(team_keyyear, opts)
+> Array&lt;String&gt; get_team_events_by_year_keys(team_key, year, opts)
 
 
 
@@ -1170,17 +1125,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_events_by_year_keys(team_keyyear, opts)
+  result = api_instance.get_team_events_by_year_keys(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_by_year_keys: #{e}"
@@ -1211,7 +1163,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_events_by_year_simple**
-> Array&lt;EventSimple&gt; get_team_events_by_year_simple(team_keyyear, opts)
+> Array&lt;EventSimple&gt; get_team_events_by_year_simple(team_key, year, opts)
 
 
 
@@ -1230,17 +1182,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_events_by_year_simple(team_keyyear, opts)
+  result = api_instance.get_team_events_by_year_simple(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_by_year_simple: #{e}"
@@ -1290,11 +1239,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -1347,11 +1294,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -1385,7 +1330,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_events_statuses_by_year**
-> Hash&lt;String, TeamEventStatus&gt; get_team_events_statuses_by_year(team_keyyear, opts)
+> Hash&lt;String, TeamEventStatus&gt; get_team_events_statuses_by_year(team_key, year, opts)
 
 
 
@@ -1404,17 +1349,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_events_statuses_by_year(team_keyyear, opts)
+  result = api_instance.get_team_events_statuses_by_year(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_events_statuses_by_year: #{e}"
@@ -1445,7 +1387,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_matches_by_year**
-> Array&lt;Match&gt; get_team_matches_by_year(team_keyyear, opts)
+> Array&lt;Match&gt; get_team_matches_by_year(team_key, year, opts)
 
 
 
@@ -1464,17 +1406,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_matches_by_year(team_keyyear, opts)
+  result = api_instance.get_team_matches_by_year(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_matches_by_year: #{e}"
@@ -1505,7 +1444,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_matches_by_year_keys**
-> Array&lt;String&gt; get_team_matches_by_year_keys(team_keyyear, opts)
+> Array&lt;String&gt; get_team_matches_by_year_keys(team_key, year, opts)
 
 
 
@@ -1524,17 +1463,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_matches_by_year_keys(team_keyyear, opts)
+  result = api_instance.get_team_matches_by_year_keys(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_matches_by_year_keys: #{e}"
@@ -1565,7 +1501,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_matches_by_year_simple**
-> Array&lt;MatchSimple&gt; get_team_matches_by_year_simple(team_keyyear, opts)
+> Array&lt;MatchSimple&gt; get_team_matches_by_year_simple(team_key, year, opts)
 
 
 
@@ -1584,17 +1520,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_matches_by_year_simple(team_keyyear, opts)
+  result = api_instance.get_team_matches_by_year_simple(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_matches_by_year_simple: #{e}"
@@ -1625,7 +1558,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_media_by_tag**
-> Array&lt;Media&gt; get_team_media_by_tag(team_keymedia_tag, , opts)
+> Array&lt;Media&gt; get_team_media_by_tag(team_key, media_tag, opts)
 
 
 
@@ -1644,17 +1577,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-media_tag = "media_tag_example" # String | Media Tag which describes the Media.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+media_tag = 'media_tag_example' # String | Media Tag which describes the Media.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_media_by_tag(team_keymedia_tag, , opts)
+  result = api_instance.get_team_media_by_tag(team_key, media_tag, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_media_by_tag: #{e}"
@@ -1685,7 +1615,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_media_by_tag_year**
-> Array&lt;Media&gt; get_team_media_by_tag_year(team_keymedia_tag, year, opts)
+> Array&lt;Media&gt; get_team_media_by_tag_year(team_key, media_tag, year, opts)
 
 
 
@@ -1704,19 +1634,15 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-media_tag = "media_tag_example" # String | Media Tag which describes the Media.
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+media_tag = 'media_tag_example' # String | Media Tag which describes the Media.
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_media_by_tag_year(team_keymedia_tag, year, opts)
+  result = api_instance.get_team_media_by_tag_year(team_key, media_tag, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_media_by_tag_year: #{e}"
@@ -1748,7 +1674,7 @@ Name | Type | Description  | Notes
 
 
 # **get_team_media_by_year**
-> Array&lt;Media&gt; get_team_media_by_year(team_keyyear, opts)
+> Array&lt;Media&gt; get_team_media_by_year(team_key, year, opts)
 
 
 
@@ -1767,17 +1693,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_team_media_by_year(team_keyyear, opts)
+  result = api_instance.get_team_media_by_year(team_key, year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_team_media_by_year: #{e}"
@@ -1827,11 +1750,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -1884,11 +1805,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -1941,11 +1860,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -1998,11 +1915,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
-team_key = "team_key_example" # String | TBA Team Key, eg `frc254`
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -2055,11 +1970,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
 page_num = 56 # Integer | Page number of results to return, zero-indexed
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -2093,7 +2006,7 @@ Name | Type | Description  | Notes
 
 
 # **get_teams_by_year**
-> Array&lt;Team&gt; get_teams_by_year(yearpage_num, opts)
+> Array&lt;Team&gt; get_teams_by_year(year, page_num, opts)
 
 
 
@@ -2112,17 +2025,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
 page_num = 56 # Integer | Page number of results to return, zero-indexed
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_teams_by_year(yearpage_num, opts)
+  result = api_instance.get_teams_by_year(year, page_num, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_by_year: #{e}"
@@ -2153,7 +2063,7 @@ Name | Type | Description  | Notes
 
 
 # **get_teams_by_year_keys**
-> Array&lt;String&gt; get_teams_by_year_keys(yearpage_num, opts)
+> Array&lt;String&gt; get_teams_by_year_keys(year, page_num, opts)
 
 
 
@@ -2172,17 +2082,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
 page_num = 56 # Integer | Page number of results to return, zero-indexed
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_teams_by_year_keys(yearpage_num, opts)
+  result = api_instance.get_teams_by_year_keys(year, page_num, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_by_year_keys: #{e}"
@@ -2213,7 +2120,7 @@ Name | Type | Description  | Notes
 
 
 # **get_teams_by_year_simple**
-> Array&lt;TeamSimple&gt; get_teams_by_year_simple(yearpage_num, opts)
+> Array&lt;TeamSimple&gt; get_teams_by_year_simple(year, page_num, opts)
 
 
 
@@ -2232,17 +2139,14 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
 year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
-
 page_num = 56 # Integer | Page number of results to return, zero-indexed
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
-  result = api_instance.get_teams_by_year_simple(yearpage_num, opts)
+  result = api_instance.get_teams_by_year_simple(year, page_num, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TeamApi->get_teams_by_year_simple: #{e}"
@@ -2292,11 +2196,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
 page_num = 56 # Integer | Page number of results to return, zero-indexed
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
@@ -2349,11 +2251,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TeamApi.new
-
 page_num = 56 # Integer | Page number of results to return, zero-indexed
-
-opts = { 
-  if_modified_since: "if_modified_since_example" # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
 }
 
 begin
