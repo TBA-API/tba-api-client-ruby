@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::MatchTimeseries2018
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **event_key** | **String** | TBA event key with the format yyyy[EVENT_CODE], where yyyy is the year, and EVENT_CODE is the event code of the event. | [optional] 
@@ -34,5 +35,43 @@ Name | Type | Description | Notes
 **red_scale_owned** | **Integer** | 1 if the red alliance owns the SCALE, 0 if not. | [optional] 
 **red_score** | **Integer** | Current score for the red alliance. | [optional] 
 **red_switch_owned** | **Integer** | 1 if the red alliance owns their SWITCH, 0 if not. | [optional] 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::MatchTimeseries2018.new(event_key: null,
+                                 match_id: null,
+                                 mode: null,
+                                 play: null,
+                                 time_remaining: null,
+                                 blue_auto_quest: null,
+                                 blue_boost_count: null,
+                                 blue_boost_played: null,
+                                 blue_current_powerup: null,
+                                 blue_face_the_boss: null,
+                                 blue_force_count: null,
+                                 blue_force_played: null,
+                                 blue_levitate_count: null,
+                                 blue_levitate_played: null,
+                                 blue_powerup_time_remaining: null,
+                                 blue_scale_owned: null,
+                                 blue_score: null,
+                                 blue_switch_owned: null,
+                                 red_auto_quest: null,
+                                 red_boost_count: null,
+                                 red_boost_played: null,
+                                 red_current_powerup: null,
+                                 red_face_the_boss: null,
+                                 red_force_count: null,
+                                 red_force_played: null,
+                                 red_levitate_count: null,
+                                 red_levitate_played: null,
+                                 red_powerup_time_remaining: null,
+                                 red_scale_owned: null,
+                                 red_score: null,
+                                 red_switch_owned: null)
+```
 
 

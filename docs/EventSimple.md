@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::EventSimple
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **String** | TBA event key with the format yyyy[EVENT_CODE], where yyyy is the year, and EVENT_CODE is the event code of the event. | 
@@ -14,5 +15,23 @@ Name | Type | Description | Notes
 **start_date** | **Date** | Event start date in &#x60;yyyy-mm-dd&#x60; format. | 
 **end_date** | **Date** | Event end date in &#x60;yyyy-mm-dd&#x60; format. | 
 **year** | **Integer** | Year the event data is for. | 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::EventSimple.new(key: null,
+                                 name: null,
+                                 event_code: null,
+                                 event_type: null,
+                                 district: null,
+                                 city: null,
+                                 state_prov: null,
+                                 country: null,
+                                 start_date: null,
+                                 end_date: null,
+                                 year: null)
+```
 
 

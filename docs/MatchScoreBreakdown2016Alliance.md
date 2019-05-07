@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::MatchScoreBreakdown2016Alliance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **auto_points** | **Integer** |  | [optional] 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 **teleop_boulders_low** | **Integer** |  | [optional] 
 **teleop_boulders_high** | **Integer** |  | [optional] 
 **teleop_boulder_points** | **Integer** |  | [optional] 
-**teleop_defenses_breached** | **BOOLEAN** |  | [optional] 
+**teleop_defenses_breached** | **Boolean** |  | [optional] 
 **teleop_challenge_points** | **Integer** |  | [optional] 
 **teleop_scale_points** | **Integer** |  | [optional] 
 **teleop_tower_captured** | **Integer** |  | [optional] 
@@ -41,5 +42,50 @@ Name | Type | Description | Notes
 **position3crossings** | **Integer** |  | [optional] 
 **position4crossings** | **Integer** |  | [optional] 
 **position5crossings** | **Integer** |  | [optional] 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::MatchScoreBreakdown2016Alliance.new(auto_points: null,
+                                 teleop_points: null,
+                                 breach_points: null,
+                                 foul_points: null,
+                                 capture_points: null,
+                                 adjust_points: null,
+                                 total_points: null,
+                                 robot1_auto: null,
+                                 robot2_auto: null,
+                                 robot3_auto: null,
+                                 auto_reach_points: null,
+                                 auto_crossing_points: null,
+                                 auto_boulders_low: null,
+                                 auto_boulders_high: null,
+                                 auto_boulder_points: null,
+                                 teleop_crossing_points: null,
+                                 teleop_boulders_low: null,
+                                 teleop_boulders_high: null,
+                                 teleop_boulder_points: null,
+                                 teleop_defenses_breached: null,
+                                 teleop_challenge_points: null,
+                                 teleop_scale_points: null,
+                                 teleop_tower_captured: null,
+                                 tower_face_a: null,
+                                 tower_face_b: null,
+                                 tower_face_c: null,
+                                 tower_end_strength: null,
+                                 tech_foul_count: null,
+                                 foul_count: null,
+                                 position2: null,
+                                 position3: null,
+                                 position4: null,
+                                 position5: null,
+                                 position1crossings: null,
+                                 position2crossings: null,
+                                 position3crossings: null,
+                                 position4crossings: null,
+                                 position5crossings: null)
+```
 
 

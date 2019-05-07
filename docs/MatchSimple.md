@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::MatchSimple
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **String** | TBA match key with the format &#x60;yyyy[EVENT_CODE]_[COMP_LEVEL]m[MATCH_NUMBER]&#x60;, where &#x60;yyyy&#x60; is the year, and &#x60;EVENT_CODE&#x60; is the event code of the event, &#x60;COMP_LEVEL&#x60; is (qm, ef, qf, sf, f), and &#x60;MATCH_NUMBER&#x60; is the match number in the competition level. A set number may append the competition level if more than one match in required per set. | 
@@ -13,5 +14,22 @@ Name | Type | Description | Notes
 **time** | **Integer** | UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the scheduled match time, as taken from the published schedule. | [optional] 
 **predicted_time** | **Integer** | UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of the TBA predicted match start time. | [optional] 
 **actual_time** | **Integer** | UNIX timestamp (seconds since 1-Jan-1970 00:00:00) of actual match start time. | [optional] 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::MatchSimple.new(key: null,
+                                 comp_level: null,
+                                 set_number: null,
+                                 match_number: null,
+                                 alliances: null,
+                                 winning_alliance: null,
+                                 event_key: null,
+                                 time: null,
+                                 predicted_time: null,
+                                 actual_time: null)
+```
 
 

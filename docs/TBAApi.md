@@ -7,7 +7,9 @@ Method | HTTP request | Description
 [**get_status**](TBAApi.md#get_status) | **GET** /status | 
 
 
-# **get_status**
+
+## get_status
+
 > APIStatus get_status(opts)
 
 
@@ -15,6 +17,7 @@ Method | HTTP request | Description
 Returns API status, and TBA status information.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -41,6 +44,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
@@ -55,8 +59,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 

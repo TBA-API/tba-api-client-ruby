@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::EventInsights2016
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **low_bar** | **Array&lt;Float&gt;** | For the Low Bar - An array with three values, number of times damaged, number of opportunities to damage, and percentage. | 
@@ -27,5 +28,36 @@ Name | Type | Description | Notes
 **average_tower_score** | **Float** | Average tower score. | 
 **average_foul_score** | **Float** | Average foul score. | 
 **high_score** | **Array&lt;String&gt;** | An array with three values, high score, match key from the match with the high score, and the name of the match. | 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::EventInsights2016.new(low_bar: null,
+                                 a_cheval_de_frise: null,
+                                 a_portcullis: null,
+                                 b_ramparts: null,
+                                 b_moat: null,
+                                 c_sally_port: null,
+                                 c_drawbridge: null,
+                                 d_rough_terrain: null,
+                                 d_rock_wall: null,
+                                 average_high_goals: null,
+                                 average_low_goals: null,
+                                 breaches: null,
+                                 scales: null,
+                                 challenges: null,
+                                 captures: null,
+                                 average_win_score: null,
+                                 average_win_margin: null,
+                                 average_score: null,
+                                 average_auto_score: null,
+                                 average_crossing_score: null,
+                                 average_boulder_score: null,
+                                 average_tower_score: null,
+                                 average_foul_score: null,
+                                 high_score: null)
+```
 
 

@@ -46,7 +46,9 @@ Method | HTTP request | Description
 [**get_teams_simple**](TeamApi.md#get_teams_simple) | **GET** /teams/{page_num}/simple | 
 
 
-# **get_district_rankings**
+
+## get_district_rankings
+
 > Array&lt;DistrictRanking&gt; get_district_rankings(district_key, opts)
 
 
@@ -54,6 +56,7 @@ Method | HTTP request | Description
 Gets a list of team district rankings for the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -81,6 +84,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -96,12 +100,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_teams
 
-# **get_district_teams**
 > Array&lt;Team&gt; get_district_teams(district_key, opts)
 
 
@@ -109,6 +113,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -136,6 +141,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -151,12 +157,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_teams_keys
 
-# **get_district_teams_keys**
 > Array&lt;String&gt; get_district_teams_keys(district_key, opts)
 
 
@@ -164,6 +170,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -191,6 +198,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -206,12 +214,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_teams_simple
 
-# **get_district_teams_simple**
 > Array&lt;TeamSimple&gt; get_district_teams_simple(district_key, opts)
 
 
@@ -219,6 +227,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -246,6 +255,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -261,12 +271,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_teams
 
-# **get_event_teams**
 > Array&lt;Team&gt; get_event_teams(event_key, opts)
 
 
@@ -274,6 +284,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -301,6 +312,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -316,12 +328,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_teams_keys
 
-# **get_event_teams_keys**
 > Array&lt;String&gt; get_event_teams_keys(event_key, opts)
 
 
@@ -329,6 +341,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` keys that competed in the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -356,6 +369,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -371,12 +385,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_teams_simple
 
-# **get_event_teams_simple**
 > Array&lt;TeamSimple&gt; get_event_teams_simple(event_key, opts)
 
 
@@ -384,6 +398,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of `Team` objects that competed in the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -411,6 +426,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -426,12 +442,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_teams_statuses
 
-# **get_event_teams_statuses**
 > Hash&lt;String, TeamEventStatus&gt; get_event_teams_statuses(event_key, opts)
 
 
@@ -439,6 +455,7 @@ Name | Type | Description  | Notes
 Gets a key-value list of the event statuses for teams competing at the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -466,6 +483,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -481,12 +499,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team
 
-# **get_team**
 > Team get_team(team_key, opts)
 
 
@@ -494,6 +512,7 @@ Name | Type | Description  | Notes
 Gets a `Team` object for the team referenced by the given key.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -521,6 +540,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -536,12 +556,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_awards
 
-# **get_team_awards**
 > Array&lt;Award&gt; get_team_awards(team_key, opts)
 
 
@@ -549,6 +569,7 @@ Name | Type | Description  | Notes
 Gets a list of awards the given team has won.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -576,6 +597,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -591,12 +613,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_awards_by_year
 
-# **get_team_awards_by_year**
 > Array&lt;Award&gt; get_team_awards_by_year(team_key, year, opts)
 
 
@@ -604,6 +626,7 @@ Name | Type | Description  | Notes
 Gets a list of awards the given team has won in a given year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -632,6 +655,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -648,12 +672,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_districts
 
-# **get_team_districts**
 > Array&lt;DistrictList&gt; get_team_districts(team_key, opts)
 
 
@@ -661,6 +685,7 @@ Name | Type | Description  | Notes
 Gets an array of districts representing each year the team was in a district. Will return an empty array if the team was never in a district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -688,6 +713,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -703,12 +729,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_awards
 
-# **get_team_event_awards**
 > Array&lt;Award&gt; get_team_event_awards(team_key, event_key, opts)
 
 
@@ -716,6 +742,7 @@ Name | Type | Description  | Notes
 Gets a list of awards the given team won at the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -744,6 +771,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -760,12 +788,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_matches
 
-# **get_team_event_matches**
 > Array&lt;Match&gt; get_team_event_matches(team_key, event_key, opts)
 
 
@@ -773,6 +801,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given team and event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -801,6 +830,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -817,12 +847,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_matches_keys
 
-# **get_team_event_matches_keys**
 > Array&lt;String&gt; get_team_event_matches_keys(team_key, event_key, opts)
 
 
@@ -830,6 +860,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for matches for the given team and event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -858,6 +889,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -874,12 +906,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_matches_simple
 
-# **get_team_event_matches_simple**
 > Array&lt;Match&gt; get_team_event_matches_simple(team_key, event_key, opts)
 
 
@@ -887,6 +919,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given team and event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -915,6 +948,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -931,12 +965,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_status
 
-# **get_team_event_status**
 > TeamEventStatus get_team_event_status(team_key, event_key, opts)
 
 
@@ -944,6 +978,7 @@ Name | Type | Description  | Notes
 Gets the competition rank and status of the team at the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -972,6 +1007,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -988,12 +1024,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events
 
-# **get_team_events**
 > Array&lt;Event&gt; get_team_events(team_key, opts)
 
 
@@ -1001,6 +1037,7 @@ Name | Type | Description  | Notes
 Gets a list of all events this team has competed at.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1028,6 +1065,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1043,12 +1081,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events_by_year
 
-# **get_team_events_by_year**
 > Array&lt;Event&gt; get_team_events_by_year(team_key, year, opts)
 
 
@@ -1056,6 +1094,7 @@ Name | Type | Description  | Notes
 Gets a list of events this team has competed at in the given year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1084,6 +1123,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1100,12 +1140,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events_by_year_keys
 
-# **get_team_events_by_year_keys**
 > Array&lt;String&gt; get_team_events_by_year_keys(team_key, year, opts)
 
 
@@ -1113,6 +1153,7 @@ Name | Type | Description  | Notes
 Gets a list of the event keys for events this team has competed at in the given year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1141,6 +1182,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1157,12 +1199,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events_by_year_simple
 
-# **get_team_events_by_year_simple**
 > Array&lt;EventSimple&gt; get_team_events_by_year_simple(team_key, year, opts)
 
 
@@ -1170,6 +1212,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of events this team has competed at in the given year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1198,6 +1241,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1214,12 +1258,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events_keys
 
-# **get_team_events_keys**
 > Array&lt;String&gt; get_team_events_keys(team_key, opts)
 
 
@@ -1227,6 +1271,7 @@ Name | Type | Description  | Notes
 Gets a list of the event keys for all events this team has competed at.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1254,6 +1299,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1269,12 +1315,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events_simple
 
-# **get_team_events_simple**
 > Array&lt;EventSimple&gt; get_team_events_simple(team_key, opts)
 
 
@@ -1282,6 +1328,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of all events this team has competed at.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1309,6 +1356,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1324,12 +1372,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_events_statuses_by_year
 
-# **get_team_events_statuses_by_year**
 > Hash&lt;String, TeamEventStatus&gt; get_team_events_statuses_by_year(team_key, year, opts)
 
 
@@ -1337,6 +1385,7 @@ Name | Type | Description  | Notes
 Gets a key-value list of the event statuses for events this team has competed at in the given year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1365,6 +1414,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1381,12 +1431,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_matches_by_year
 
-# **get_team_matches_by_year**
 > Array&lt;Match&gt; get_team_matches_by_year(team_key, year, opts)
 
 
@@ -1394,6 +1444,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1422,6 +1473,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1438,12 +1490,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_matches_by_year_keys
 
-# **get_team_matches_by_year_keys**
 > Array&lt;String&gt; get_team_matches_by_year_keys(team_key, year, opts)
 
 
@@ -1451,6 +1503,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for matches for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1479,6 +1532,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1495,12 +1549,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_matches_by_year_simple
 
-# **get_team_matches_by_year_simple**
 > Array&lt;MatchSimple&gt; get_team_matches_by_year_simple(team_key, year, opts)
 
 
@@ -1508,6 +1562,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1536,6 +1591,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1552,12 +1608,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_media_by_tag
 
-# **get_team_media_by_tag**
 > Array&lt;Media&gt; get_team_media_by_tag(team_key, media_tag, opts)
 
 
@@ -1565,6 +1621,7 @@ Name | Type | Description  | Notes
 Gets a list of Media (videos / pictures) for the given team and tag.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1593,6 +1650,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1609,12 +1667,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_media_by_tag_year
 
-# **get_team_media_by_tag_year**
 > Array&lt;Media&gt; get_team_media_by_tag_year(team_key, media_tag, year, opts)
 
 
@@ -1622,6 +1680,7 @@ Name | Type | Description  | Notes
 Gets a list of Media (videos / pictures) for the given team, tag and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1651,6 +1710,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1668,12 +1728,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_media_by_year
 
-# **get_team_media_by_year**
 > Array&lt;Media&gt; get_team_media_by_year(team_key, year, opts)
 
 
@@ -1681,6 +1741,7 @@ Name | Type | Description  | Notes
 Gets a list of Media (videos / pictures) for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1709,6 +1770,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1725,12 +1787,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_robots
 
-# **get_team_robots**
 > Array&lt;TeamRobot&gt; get_team_robots(team_key, opts)
 
 
@@ -1738,6 +1800,7 @@ Name | Type | Description  | Notes
 Gets a list of year and robot name pairs for each year that a robot name was provided. Will return an empty array if the team has never named a robot.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1765,6 +1828,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1780,12 +1844,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_simple
 
-# **get_team_simple**
 > TeamSimple get_team_simple(team_key, opts)
 
 
@@ -1793,6 +1857,7 @@ Name | Type | Description  | Notes
 Gets a `Team_Simple` object for the team referenced by the given key.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1820,6 +1885,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1835,12 +1901,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_social_media
 
-# **get_team_social_media**
 > Array&lt;Media&gt; get_team_social_media(team_key, opts)
 
 
@@ -1848,6 +1914,7 @@ Name | Type | Description  | Notes
 Gets a list of Media (social media) for the given team.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1875,6 +1942,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1890,12 +1958,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_years_participated
 
-# **get_team_years_participated**
 > Array&lt;Integer&gt; get_team_years_participated(team_key, opts)
 
 
@@ -1903,6 +1971,7 @@ Name | Type | Description  | Notes
 Gets a list of years in which the team participated in at least one competition.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1930,6 +1999,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -1945,12 +2015,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_teams
 
-# **get_teams**
 > Array&lt;Team&gt; get_teams(page_num, opts)
 
 
@@ -1958,6 +2028,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects, paginated in groups of 500.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -1985,6 +2056,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page_num** | **Integer**| Page number of results to return, zero-indexed | 
@@ -2000,12 +2072,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_teams_by_year
 
-# **get_teams_by_year**
 > Array&lt;Team&gt; get_teams_by_year(year, page_num, opts)
 
 
@@ -2013,6 +2085,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in the given year, paginated in groups of 500.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -2041,6 +2114,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Integer**| Competition Year (or Season). Must be 4 digits. | 
@@ -2057,12 +2131,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_teams_by_year_keys
 
-# **get_teams_by_year_keys**
 > Array&lt;String&gt; get_teams_by_year_keys(year, page_num, opts)
 
 
@@ -2070,6 +2144,7 @@ Name | Type | Description  | Notes
 Gets a list Team Keys that competed in the given year, paginated in groups of 500.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -2098,6 +2173,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Integer**| Competition Year (or Season). Must be 4 digits. | 
@@ -2114,12 +2190,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_teams_by_year_simple
 
-# **get_teams_by_year_simple**
 > Array&lt;TeamSimple&gt; get_teams_by_year_simple(year, page_num, opts)
 
 
@@ -2127,6 +2203,7 @@ Name | Type | Description  | Notes
 Gets a list of short form `Team_Simple` objects that competed in the given year, paginated in groups of 500.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -2155,6 +2232,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Integer**| Competition Year (or Season). Must be 4 digits. | 
@@ -2171,12 +2249,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_teams_keys
 
-# **get_teams_keys**
 > Array&lt;String&gt; get_teams_keys(page_num, opts)
 
 
@@ -2184,6 +2262,7 @@ Name | Type | Description  | Notes
 Gets a list of Team keys, paginated in groups of 500. (Note, each page will not have 500 teams, but will include the teams within that range of 500.)
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -2211,6 +2290,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page_num** | **Integer**| Page number of results to return, zero-indexed | 
@@ -2226,12 +2306,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_teams_simple
 
-# **get_teams_simple**
 > Array&lt;TeamSimple&gt; get_teams_simple(page_num, opts)
 
 
@@ -2239,6 +2319,7 @@ Name | Type | Description  | Notes
 Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -2266,6 +2347,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page_num** | **Integer**| Page number of results to return, zero-indexed | 
@@ -2281,8 +2363,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 

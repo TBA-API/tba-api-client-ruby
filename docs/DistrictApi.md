@@ -16,7 +16,9 @@ Method | HTTP request | Description
 [**get_team_districts**](DistrictApi.md#get_team_districts) | **GET** /team/{team_key}/districts | 
 
 
-# **get_district_events**
+
+## get_district_events
+
 > Array&lt;Event&gt; get_district_events(district_key, opts)
 
 
@@ -24,6 +26,7 @@ Method | HTTP request | Description
 Gets a list of events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -51,6 +54,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -66,12 +70,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_events_keys
 
-# **get_district_events_keys**
 > Array&lt;String&gt; get_district_events_keys(district_key, opts)
 
 
@@ -79,6 +83,7 @@ Name | Type | Description  | Notes
 Gets a list of event keys for events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -106,6 +111,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -121,12 +127,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_events_simple
 
-# **get_district_events_simple**
 > Array&lt;EventSimple&gt; get_district_events_simple(district_key, opts)
 
 
@@ -134,6 +140,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -161,6 +168,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -176,12 +184,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_rankings
 
-# **get_district_rankings**
 > Array&lt;DistrictRanking&gt; get_district_rankings(district_key, opts)
 
 
@@ -189,6 +197,7 @@ Name | Type | Description  | Notes
 Gets a list of team district rankings for the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -216,6 +225,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -231,12 +241,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_teams
 
-# **get_district_teams**
 > Array&lt;Team&gt; get_district_teams(district_key, opts)
 
 
@@ -244,6 +254,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -271,6 +282,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -286,12 +298,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_teams_keys
 
-# **get_district_teams_keys**
 > Array&lt;String&gt; get_district_teams_keys(district_key, opts)
 
 
@@ -299,6 +311,7 @@ Name | Type | Description  | Notes
 Gets a list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -326,6 +339,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -341,12 +355,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_district_teams_simple
 
-# **get_district_teams_simple**
 > Array&lt;TeamSimple&gt; get_district_teams_simple(district_key, opts)
 
 
@@ -354,6 +368,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of `Team` objects that competed in events in the given district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -381,6 +396,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
@@ -396,12 +412,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_districts_by_year
 
-# **get_districts_by_year**
 > Array&lt;DistrictList&gt; get_districts_by_year(year, opts)
 
 
@@ -409,6 +425,7 @@ Name | Type | Description  | Notes
 Gets a list of districts and their corresponding district key, for the given year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -436,6 +453,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Integer**| Competition Year (or Season). Must be 4 digits. | 
@@ -451,12 +469,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_district_points
 
-# **get_event_district_points**
 > EventDistrictPoints get_event_district_points(event_key, opts)
 
 
@@ -464,6 +482,7 @@ Name | Type | Description  | Notes
 Gets a list of team rankings for the Event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -491,6 +510,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -506,12 +526,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_districts
 
-# **get_team_districts**
 > Array&lt;DistrictList&gt; get_team_districts(team_key, opts)
 
 
@@ -519,6 +539,7 @@ Name | Type | Description  | Notes
 Gets an array of districts representing each year the team was in a district. Will return an empty array if the team was never in a district.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -546,6 +567,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -561,8 +583,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 

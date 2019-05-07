@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::EventRankingRankings
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **matches_played** | **Integer** | Number of matches played by this team. | 
@@ -11,5 +12,20 @@ Name | Type | Description | Notes
 **rank** | **Integer** | The team&#39;s rank at the event as provided by FIRST. | 
 **dq** | **Integer** | Number of times disqualified. | 
 **team_key** | **String** | The team with this rank. | 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::EventRankingRankings.new(matches_played: null,
+                                 qual_average: null,
+                                 extra_stats: null,
+                                 sort_orders: null,
+                                 record: null,
+                                 rank: null,
+                                 dq: null,
+                                 team_key: null)
+```
 
 

@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::Event
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **String** | TBA event key with the format yyyy[EVENT_CODE], where yyyy is the year, and EVENT_CODE is the event code of the event. | 
@@ -33,5 +34,42 @@ Name | Type | Description | Notes
 **parent_event_key** | **String** | The TBA Event key that represents the event&#39;s parent. Used to link back to the event from a division event. It is also the inverse relation of &#x60;divison_keys&#x60;. | [optional] 
 **playoff_type** | **Integer** | Playoff Type, as defined here: https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/playoff_type.py#L4, or null. | [optional] 
 **playoff_type_string** | **String** | String representation of the &#x60;playoff_type&#x60;, or null. | [optional] 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::Event.new(key: null,
+                                 name: null,
+                                 event_code: null,
+                                 event_type: null,
+                                 district: null,
+                                 city: null,
+                                 state_prov: null,
+                                 country: null,
+                                 start_date: null,
+                                 end_date: null,
+                                 year: null,
+                                 short_name: null,
+                                 event_type_string: null,
+                                 week: null,
+                                 address: null,
+                                 postal_code: null,
+                                 gmaps_place_id: null,
+                                 gmaps_url: null,
+                                 lat: null,
+                                 lng: null,
+                                 location_name: null,
+                                 timezone: null,
+                                 website: null,
+                                 first_event_id: null,
+                                 first_event_code: null,
+                                 webcasts: null,
+                                 division_keys: null,
+                                 parent_event_key: null,
+                                 playoff_type: null,
+                                 playoff_type_string: null)
+```
 
 

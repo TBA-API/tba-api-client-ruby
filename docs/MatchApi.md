@@ -19,7 +19,9 @@ Method | HTTP request | Description
 [**get_team_matches_by_year_simple**](MatchApi.md#get_team_matches_by_year_simple) | **GET** /team/{team_key}/matches/{year}/simple | 
 
 
-# **get_event_match_timeseries**
+
+## get_event_match_timeseries
+
 > Array&lt;String&gt; get_event_match_timeseries(event_key, opts)
 
 
@@ -27,6 +29,7 @@ Method | HTTP request | Description
 Gets an array of Match Keys for the given event key that have timeseries data. Returns an empty array if no matches have timeseries data. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -54,6 +57,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -69,12 +73,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_matches
 
-# **get_event_matches**
 > Array&lt;Match&gt; get_event_matches(event_key, opts)
 
 
@@ -82,6 +86,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -109,6 +114,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -124,12 +130,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_matches_keys
 
-# **get_event_matches_keys**
 > Array&lt;String&gt; get_event_matches_keys(event_key, opts)
 
 
@@ -137,6 +143,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -164,6 +171,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -179,12 +187,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_event_matches_simple
 
-# **get_event_matches_simple**
 > Array&lt;MatchSimple&gt; get_event_matches_simple(event_key, opts)
 
 
@@ -192,6 +200,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -219,6 +228,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
@@ -234,12 +244,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_match
 
-# **get_match**
 > Match get_match(match_key, opts)
 
 
@@ -247,6 +257,7 @@ Name | Type | Description  | Notes
 Gets a `Match` object for the given match key.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -274,6 +285,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **match_key** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
@@ -289,12 +301,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_match_simple
 
-# **get_match_simple**
 > MatchSimple get_match_simple(match_key, opts)
 
 
@@ -302,6 +314,7 @@ Name | Type | Description  | Notes
 Gets a short-form `Match` object for the given match key.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -329,6 +342,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **match_key** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
@@ -344,12 +358,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_match_timeseries
 
-# **get_match_timeseries**
 > Array&lt;Object&gt; get_match_timeseries(match_key, opts)
 
 
@@ -357,6 +371,7 @@ Name | Type | Description  | Notes
 Gets an array of game-specific Match Timeseries objects for the given match key or an empty array if not available. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -384,6 +399,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **match_key** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
@@ -399,12 +415,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_matches
 
-# **get_team_event_matches**
 > Array&lt;Match&gt; get_team_event_matches(team_key, event_key, opts)
 
 
@@ -412,6 +428,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given team and event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -440,6 +457,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -456,12 +474,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_matches_keys
 
-# **get_team_event_matches_keys**
 > Array&lt;String&gt; get_team_event_matches_keys(team_key, event_key, opts)
 
 
@@ -469,6 +487,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for matches for the given team and event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -497,6 +516,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -513,12 +533,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_event_matches_simple
 
-# **get_team_event_matches_simple**
 > Array&lt;Match&gt; get_team_event_matches_simple(team_key, event_key, opts)
 
 
@@ -526,6 +546,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given team and event.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -554,6 +575,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -570,12 +592,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_matches_by_year
 
-# **get_team_matches_by_year**
 > Array&lt;Match&gt; get_team_matches_by_year(team_key, year, opts)
 
 
@@ -583,6 +605,7 @@ Name | Type | Description  | Notes
 Gets a list of matches for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -611,6 +634,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -627,12 +651,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_matches_by_year_keys
 
-# **get_team_matches_by_year_keys**
 > Array&lt;String&gt; get_team_matches_by_year_keys(team_key, year, opts)
 
 
@@ -640,6 +664,7 @@ Name | Type | Description  | Notes
 Gets a list of match keys for matches for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -668,6 +693,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -684,12 +710,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
+## get_team_matches_by_year_simple
 
-# **get_team_matches_by_year_simple**
 > Array&lt;MatchSimple&gt; get_team_matches_by_year_simple(team_key, year, opts)
 
 
@@ -697,6 +723,7 @@ Name | Type | Description  | Notes
 Gets a short-form list of matches for the given team and year.
 
 ### Example
+
 ```ruby
 # load the gem
 require 'tba-api-client-ruby'
@@ -725,6 +752,7 @@ end
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
@@ -741,8 +769,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+- **Content-Type**: Not defined
+- **Accept**: application/json
 

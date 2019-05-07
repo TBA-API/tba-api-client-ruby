@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::EventInsights2017
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **average_foul_score** | **Float** | Average foul score. | 
@@ -35,5 +36,44 @@ Name | Type | Description | Notes
 **rotor_4_engaged** | **Array&lt;Float&gt;** | An array with three values, number of times rotor 4 engaged, number of opportunities to engage, and percentage. | 
 **takeoff_counts** | **Array&lt;Float&gt;** | An array with three values, number of times takeoff was counted, number of opportunities to takeoff, and percentage. | 
 **unicorn_matches** | **Array&lt;Float&gt;** | An array with three values, number of times a unicorn match (Win + kPa &amp; Rotor Bonuses) occured, number of opportunities to have a unicorn match, and percentage. | 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::EventInsights2017.new(average_foul_score: null,
+                                 average_fuel_points: null,
+                                 average_fuel_points_auto: null,
+                                 average_fuel_points_teleop: null,
+                                 average_high_goals: null,
+                                 average_high_goals_auto: null,
+                                 average_high_goals_teleop: null,
+                                 average_low_goals: null,
+                                 average_low_goals_auto: null,
+                                 average_low_goals_teleop: null,
+                                 average_mobility_points_auto: null,
+                                 average_points_auto: null,
+                                 average_points_teleop: null,
+                                 average_rotor_points: null,
+                                 average_rotor_points_auto: null,
+                                 average_rotor_points_teleop: null,
+                                 average_score: null,
+                                 average_takeoff_points_teleop: null,
+                                 average_win_margin: null,
+                                 average_win_score: null,
+                                 high_kpa: null,
+                                 high_score: null,
+                                 kpa_achieved: null,
+                                 mobility_counts: null,
+                                 rotor_1_engaged: null,
+                                 rotor_1_engaged_auto: null,
+                                 rotor_2_engaged: null,
+                                 rotor_2_engaged_auto: null,
+                                 rotor_3_engaged: null,
+                                 rotor_4_engaged: null,
+                                 takeoff_counts: null,
+                                 unicorn_matches: null)
+```
 
 

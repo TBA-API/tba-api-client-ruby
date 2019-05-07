@@ -1,6 +1,7 @@
 # TBA API v3 Ruby Client::EventInsights2018
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **auto_quest_achieved** | **Array&lt;Float&gt;** | An array with three values, number of times auto quest was completed, number of opportunities to complete the auto quest, and percentage. | 
@@ -40,5 +41,49 @@ Name | Type | Description | Notes
 **winning_scale_ownership_percentage** | **Float** | Average scale ownership percentage for the winning alliance. | 
 **winning_scale_ownership_percentage_auto** | **Float** | Average scale ownership percentage for the winning alliance during auto. | 
 **winning_scale_ownership_percentage_teleop** | **Float** | Average scale ownership percentage for the winning alliance during teleop. | 
+
+## Code Sample
+
+```ruby
+require 'TBA API v3 Ruby Client'
+
+instance = TBA API v3 Ruby Client::EventInsights2018.new(auto_quest_achieved: null,
+                                 average_boost_played: null,
+                                 average_endgame_points: null,
+                                 average_force_played: null,
+                                 average_foul_score: null,
+                                 average_points_auto: null,
+                                 average_points_teleop: null,
+                                 average_run_points_auto: null,
+                                 average_scale_ownership_points: null,
+                                 average_scale_ownership_points_auto: null,
+                                 average_scale_ownership_points_teleop: null,
+                                 average_score: null,
+                                 average_switch_ownership_points: null,
+                                 average_switch_ownership_points_auto: null,
+                                 average_switch_ownership_points_teleop: null,
+                                 average_vault_points: null,
+                                 average_win_margin: null,
+                                 average_win_score: null,
+                                 boost_played_counts: null,
+                                 climb_counts: null,
+                                 face_the_boss_achieved: null,
+                                 force_played_counts: null,
+                                 high_score: null,
+                                 levitate_played_counts: null,
+                                 run_counts_auto: null,
+                                 scale_neutral_percentage: null,
+                                 scale_neutral_percentage_auto: null,
+                                 scale_neutral_percentage_teleop: null,
+                                 switch_owned_counts_auto: null,
+                                 unicorn_matches: null,
+                                 winning_opp_switch_denial_percentage_teleop: null,
+                                 winning_own_switch_ownership_percentage: null,
+                                 winning_own_switch_ownership_percentage_auto: null,
+                                 winning_own_switch_ownership_percentage_teleop: null,
+                                 winning_scale_ownership_percentage: null,
+                                 winning_scale_ownership_percentage_auto: null,
+                                 winning_scale_ownership_percentage_teleop: null)
+```
 
 
