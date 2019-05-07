@@ -11,5 +11,5 @@ OpenAPI Generator version: 4.0.0-beta2
 =end
 
 module TBA API v3 Ruby Client
-  VERSION = '1.0.0'
+  VERSION = '$API_VERSION'
 end

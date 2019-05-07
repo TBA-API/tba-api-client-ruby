@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tba-api-client-ruby (1.0.0)
+    tba-api-client-ruby ($API_VERSION)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
 
