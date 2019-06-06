@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## get_status
 
-> APIStatus get_status(opts)
+> APIStatus get_status
 
 
 
@@ -30,12 +30,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::TBAApi.new
-opts = {
-  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
-}
 
 begin
-  result = api_instance.get_status(opts)
+  result = api_instance.get_status
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling TBAApi->get_status: #{e}"
@@ -44,10 +41,7 @@ end
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 

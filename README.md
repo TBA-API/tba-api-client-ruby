@@ -73,13 +73,9 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
-district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
-opts = {
-  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
-}
 
 begin
-  result = api_instance.get_district_events(district_key, opts)
+  result = api_instance.get_district_events
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events: #{e}"
