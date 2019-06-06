@@ -21,6 +21,7 @@ module TBA API v3 Ruby Client
     end
     # Returns API status, and TBA status information.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [APIStatus]
     def get_status(opts = {})
       data, _status_code, _headers = get_status_with_http_info(opts)
@@ -29,6 +30,7 @@ module TBA API v3 Ruby Client
 
     # Returns API status, and TBA status information.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(APIStatus, Integer, Hash)>] APIStatus data, response status code and response headers
     def get_status_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -44,6 +46,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}

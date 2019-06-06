@@ -100,7 +100,7 @@ module TBA API v3 Ruby Client
         :'comp_level' => :'String',
         :'set_number' => :'Integer',
         :'match_number' => :'Integer',
-        :'alliances' => :'MatchAlliances',
+        :'alliances' => :'MatchSimpleAlliances',
         :'winning_alliance' => :'String',
         :'event_key' => :'String',
         :'time' => :'Integer',

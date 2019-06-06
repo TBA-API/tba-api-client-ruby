@@ -73,9 +73,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_events
+  result = api_instance.get_district_events(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events: #{e}"
@@ -239,7 +243,6 @@ Class | Method | HTTP request | Description
  - [TBA API v3 Ruby Client::EventSimple](docs/EventSimple.md)
  - [TBA API v3 Ruby Client::Match](docs/Match.md)
  - [TBA API v3 Ruby Client::MatchAlliance](docs/MatchAlliance.md)
- - [TBA API v3 Ruby Client::MatchAlliances](docs/MatchAlliances.md)
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2015](docs/MatchScoreBreakdown2015.md)
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2015Alliance](docs/MatchScoreBreakdown2015Alliance.md)
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2016](docs/MatchScoreBreakdown2016.md)
@@ -251,6 +254,7 @@ Class | Method | HTTP request | Description
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2019](docs/MatchScoreBreakdown2019.md)
  - [TBA API v3 Ruby Client::MatchScoreBreakdown2019Alliance](docs/MatchScoreBreakdown2019Alliance.md)
  - [TBA API v3 Ruby Client::MatchSimple](docs/MatchSimple.md)
+ - [TBA API v3 Ruby Client::MatchSimpleAlliances](docs/MatchSimpleAlliances.md)
  - [TBA API v3 Ruby Client::MatchTimeseries2018](docs/MatchTimeseries2018.md)
  - [TBA API v3 Ruby Client::MatchVideos](docs/MatchVideos.md)
  - [TBA API v3 Ruby Client::Media](docs/Media.md)

@@ -20,22 +20,30 @@ module TBA API v3 Ruby Client
       @api_client = api_client
     end
     # Gets a list of events in the given district.
+    # @param district_key [String] TBA District Key, eg &#x60;2016fim&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Event>]
-    def get_district_events(opts = {})
-      data, _status_code, _headers = get_district_events_with_http_info(opts)
+    def get_district_events(district_key, opts = {})
+      data, _status_code, _headers = get_district_events_with_http_info(district_key, opts)
       data
     end
 
     # Gets a list of events in the given district.
+    # @param district_key [String] TBA District Key, eg &#x60;2016fim&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Event>, Integer, Hash)>] Array<Event> data, response status code and response headers
-    def get_district_events_with_http_info(opts = {})
+    def get_district_events_with_http_info(district_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_district_events ...'
       end
+      # verify the required parameter 'district_key' is set
+      if @api_client.config.client_side_validation && district_key.nil?
+        fail ArgumentError, "Missing the required parameter 'district_key' when calling EventApi.get_district_events"
+      end
       # resource path
-      local_var_path = '/district/{district_key}/events'
+      local_var_path = '/district/{district_key}/events'.sub('{' + 'district_key' + '}', district_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -44,6 +52,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -74,22 +83,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of event keys for events in the given district.
+    # @param district_key [String] TBA District Key, eg &#x60;2016fim&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_district_events_keys(opts = {})
-      data, _status_code, _headers = get_district_events_keys_with_http_info(opts)
+    def get_district_events_keys(district_key, opts = {})
+      data, _status_code, _headers = get_district_events_keys_with_http_info(district_key, opts)
       data
     end
 
     # Gets a list of event keys for events in the given district.
+    # @param district_key [String] TBA District Key, eg &#x60;2016fim&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_district_events_keys_with_http_info(opts = {})
+    def get_district_events_keys_with_http_info(district_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_district_events_keys ...'
       end
+      # verify the required parameter 'district_key' is set
+      if @api_client.config.client_side_validation && district_key.nil?
+        fail ArgumentError, "Missing the required parameter 'district_key' when calling EventApi.get_district_events_keys"
+      end
       # resource path
-      local_var_path = '/district/{district_key}/events/keys'
+      local_var_path = '/district/{district_key}/events/keys'.sub('{' + 'district_key' + '}', district_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -98,6 +115,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -130,6 +148,7 @@ module TBA API v3 Ruby Client
     # Gets a short-form list of events in the given district.
     # @param district_key [String] TBA District Key, eg &#x60;2016fim&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<EventSimple>]
     def get_district_events_simple(district_key, opts = {})
       data, _status_code, _headers = get_district_events_simple_with_http_info(district_key, opts)
@@ -139,6 +158,7 @@ module TBA API v3 Ruby Client
     # Gets a short-form list of events in the given district.
     # @param district_key [String] TBA District Key, eg &#x60;2016fim&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<EventSimple>, Integer, Hash)>] Array<EventSimple> data, response status code and response headers
     def get_district_events_simple_with_http_info(district_key, opts = {})
       if @api_client.config.debugging
@@ -158,6 +178,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -188,22 +209,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets an Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Event]
-    def get_event(opts = {})
-      data, _status_code, _headers = get_event_with_http_info(opts)
+    def get_event(event_key, opts = {})
+      data, _status_code, _headers = get_event_with_http_info(event_key, opts)
       data
     end
 
     # Gets an Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Event, Integer, Hash)>] Event data, response status code and response headers
-    def get_event_with_http_info(opts = {})
+    def get_event_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event"
+      end
       # resource path
-      local_var_path = '/event/{event_key}'
+      local_var_path = '/event/{event_key}'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -212,6 +241,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -242,22 +272,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of Elimination Alliances for the given Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<EliminationAlliance>]
-    def get_event_alliances(opts = {})
-      data, _status_code, _headers = get_event_alliances_with_http_info(opts)
+    def get_event_alliances(event_key, opts = {})
+      data, _status_code, _headers = get_event_alliances_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of Elimination Alliances for the given Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<EliminationAlliance>, Integer, Hash)>] Array<EliminationAlliance> data, response status code and response headers
-    def get_event_alliances_with_http_info(opts = {})
+    def get_event_alliances_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_alliances ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_alliances"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/alliances'
+      local_var_path = '/event/{event_key}/alliances'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -266,6 +304,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -296,22 +335,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of awards from the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Award>]
-    def get_event_awards(opts = {})
-      data, _status_code, _headers = get_event_awards_with_http_info(opts)
+    def get_event_awards(event_key, opts = {})
+      data, _status_code, _headers = get_event_awards_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of awards from the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Award>, Integer, Hash)>] Array<Award> data, response status code and response headers
-    def get_event_awards_with_http_info(opts = {})
+    def get_event_awards_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_awards ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_awards"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/awards'
+      local_var_path = '/event/{event_key}/awards'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -320,6 +367,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -350,22 +398,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of team rankings for the Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [EventDistrictPoints]
-    def get_event_district_points(opts = {})
-      data, _status_code, _headers = get_event_district_points_with_http_info(opts)
+    def get_event_district_points(event_key, opts = {})
+      data, _status_code, _headers = get_event_district_points_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of team rankings for the Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(EventDistrictPoints, Integer, Hash)>] EventDistrictPoints data, response status code and response headers
-    def get_event_district_points_with_http_info(opts = {})
+    def get_event_district_points_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_district_points ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_district_points"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/district_points'
+      local_var_path = '/event/{event_key}/district_points'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -374,6 +430,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -404,22 +461,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a set of Event-specific insights for the given Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [EventInsights]
-    def get_event_insights(opts = {})
-      data, _status_code, _headers = get_event_insights_with_http_info(opts)
+    def get_event_insights(event_key, opts = {})
+      data, _status_code, _headers = get_event_insights_with_http_info(event_key, opts)
       data
     end
 
     # Gets a set of Event-specific insights for the given Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(EventInsights, Integer, Hash)>] EventInsights data, response status code and response headers
-    def get_event_insights_with_http_info(opts = {})
+    def get_event_insights_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_insights ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_insights"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/insights'
+      local_var_path = '/event/{event_key}/insights'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -428,6 +493,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -458,22 +524,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets an array of Match Keys for the given event key that have timeseries data. Returns an empty array if no matches have timeseries data. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_event_match_timeseries(opts = {})
-      data, _status_code, _headers = get_event_match_timeseries_with_http_info(opts)
+    def get_event_match_timeseries(event_key, opts = {})
+      data, _status_code, _headers = get_event_match_timeseries_with_http_info(event_key, opts)
       data
     end
 
     # Gets an array of Match Keys for the given event key that have timeseries data. Returns an empty array if no matches have timeseries data. *WARNING:* This is *not* official data, and is subject to a significant possibility of error, or missing data. Do not rely on this data for any purpose. In fact, pretend we made it up. *WARNING:* This endpoint and corresponding data models are under *active development* and may change at any time, including in breaking ways.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_event_match_timeseries_with_http_info(opts = {})
+    def get_event_match_timeseries_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_match_timeseries ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_match_timeseries"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/matches/timeseries'
+      local_var_path = '/event/{event_key}/matches/timeseries'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -482,6 +556,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -512,22 +587,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of matches for the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Match>]
-    def get_event_matches(opts = {})
-      data, _status_code, _headers = get_event_matches_with_http_info(opts)
+    def get_event_matches(event_key, opts = {})
+      data, _status_code, _headers = get_event_matches_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of matches for the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Match>, Integer, Hash)>] Array<Match> data, response status code and response headers
-    def get_event_matches_with_http_info(opts = {})
+    def get_event_matches_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_matches ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_matches"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/matches'
+      local_var_path = '/event/{event_key}/matches'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -536,6 +619,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -566,22 +650,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of match keys for the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_event_matches_keys(opts = {})
-      data, _status_code, _headers = get_event_matches_keys_with_http_info(opts)
+    def get_event_matches_keys(event_key, opts = {})
+      data, _status_code, _headers = get_event_matches_keys_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of match keys for the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_event_matches_keys_with_http_info(opts = {})
+    def get_event_matches_keys_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_matches_keys ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_matches_keys"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/matches/keys'
+      local_var_path = '/event/{event_key}/matches/keys'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -590,6 +682,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -620,22 +713,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form list of matches for the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<MatchSimple>]
-    def get_event_matches_simple(opts = {})
-      data, _status_code, _headers = get_event_matches_simple_with_http_info(opts)
+    def get_event_matches_simple(event_key, opts = {})
+      data, _status_code, _headers = get_event_matches_simple_with_http_info(event_key, opts)
       data
     end
 
     # Gets a short-form list of matches for the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<MatchSimple>, Integer, Hash)>] Array<MatchSimple> data, response status code and response headers
-    def get_event_matches_simple_with_http_info(opts = {})
+    def get_event_matches_simple_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_matches_simple ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_matches_simple"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/matches/simple'
+      local_var_path = '/event/{event_key}/matches/simple'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -644,6 +745,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -674,22 +776,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a set of Event OPRs (including OPR, DPR, and CCWM) for the given Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [EventOPRs]
-    def get_event_op_rs(opts = {})
-      data, _status_code, _headers = get_event_op_rs_with_http_info(opts)
+    def get_event_op_rs(event_key, opts = {})
+      data, _status_code, _headers = get_event_op_rs_with_http_info(event_key, opts)
       data
     end
 
     # Gets a set of Event OPRs (including OPR, DPR, and CCWM) for the given Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(EventOPRs, Integer, Hash)>] EventOPRs data, response status code and response headers
-    def get_event_op_rs_with_http_info(opts = {})
+    def get_event_op_rs_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_op_rs ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_op_rs"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/oprs'
+      local_var_path = '/event/{event_key}/oprs'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -698,6 +808,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -728,22 +839,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets information on TBA-generated predictions for the given Event. Contains year-specific information. *WARNING* This endpoint is currently under development and may change at any time.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Object]
-    def get_event_predictions(opts = {})
-      data, _status_code, _headers = get_event_predictions_with_http_info(opts)
+    def get_event_predictions(event_key, opts = {})
+      data, _status_code, _headers = get_event_predictions_with_http_info(event_key, opts)
       data
     end
 
     # Gets information on TBA-generated predictions for the given Event. Contains year-specific information. *WARNING* This endpoint is currently under development and may change at any time.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Object, Integer, Hash)>] Object data, response status code and response headers
-    def get_event_predictions_with_http_info(opts = {})
+    def get_event_predictions_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_predictions ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_predictions"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/predictions'
+      local_var_path = '/event/{event_key}/predictions'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -752,6 +871,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -782,22 +902,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of team rankings for the Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [EventRanking]
-    def get_event_rankings(opts = {})
-      data, _status_code, _headers = get_event_rankings_with_http_info(opts)
+    def get_event_rankings(event_key, opts = {})
+      data, _status_code, _headers = get_event_rankings_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of team rankings for the Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(EventRanking, Integer, Hash)>] EventRanking data, response status code and response headers
-    def get_event_rankings_with_http_info(opts = {})
+    def get_event_rankings_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_rankings ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_rankings"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/rankings'
+      local_var_path = '/event/{event_key}/rankings'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -806,6 +934,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -836,22 +965,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [EventSimple]
-    def get_event_simple(opts = {})
-      data, _status_code, _headers = get_event_simple_with_http_info(opts)
+    def get_event_simple(event_key, opts = {})
+      data, _status_code, _headers = get_event_simple_with_http_info(event_key, opts)
       data
     end
 
     # Gets a short-form Event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(EventSimple, Integer, Hash)>] EventSimple data, response status code and response headers
-    def get_event_simple_with_http_info(opts = {})
+    def get_event_simple_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_simple ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_simple"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/simple'
+      local_var_path = '/event/{event_key}/simple'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -860,6 +997,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -890,22 +1028,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of `Team` objects that competed in the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Team>]
-    def get_event_teams(opts = {})
-      data, _status_code, _headers = get_event_teams_with_http_info(opts)
+    def get_event_teams(event_key, opts = {})
+      data, _status_code, _headers = get_event_teams_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of &#x60;Team&#x60; objects that competed in the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Team>, Integer, Hash)>] Array<Team> data, response status code and response headers
-    def get_event_teams_with_http_info(opts = {})
+    def get_event_teams_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_teams ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_teams"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/teams'
+      local_var_path = '/event/{event_key}/teams'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -914,6 +1060,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -944,22 +1091,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of `Team` keys that competed in the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_event_teams_keys(opts = {})
-      data, _status_code, _headers = get_event_teams_keys_with_http_info(opts)
+    def get_event_teams_keys(event_key, opts = {})
+      data, _status_code, _headers = get_event_teams_keys_with_http_info(event_key, opts)
       data
     end
 
     # Gets a list of &#x60;Team&#x60; keys that competed in the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_event_teams_keys_with_http_info(opts = {})
+    def get_event_teams_keys_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_teams_keys ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_teams_keys"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/teams/keys'
+      local_var_path = '/event/{event_key}/teams/keys'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -968,6 +1123,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -998,22 +1154,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form list of `Team` objects that competed in the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<TeamSimple>]
-    def get_event_teams_simple(opts = {})
-      data, _status_code, _headers = get_event_teams_simple_with_http_info(opts)
+    def get_event_teams_simple(event_key, opts = {})
+      data, _status_code, _headers = get_event_teams_simple_with_http_info(event_key, opts)
       data
     end
 
     # Gets a short-form list of &#x60;Team&#x60; objects that competed in the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<TeamSimple>, Integer, Hash)>] Array<TeamSimple> data, response status code and response headers
-    def get_event_teams_simple_with_http_info(opts = {})
+    def get_event_teams_simple_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_teams_simple ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_teams_simple"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/teams/simple'
+      local_var_path = '/event/{event_key}/teams/simple'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1022,6 +1186,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1052,22 +1217,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a key-value list of the event statuses for teams competing at the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Hash<String, TeamEventStatus>]
-    def get_event_teams_statuses(opts = {})
-      data, _status_code, _headers = get_event_teams_statuses_with_http_info(opts)
+    def get_event_teams_statuses(event_key, opts = {})
+      data, _status_code, _headers = get_event_teams_statuses_with_http_info(event_key, opts)
       data
     end
 
     # Gets a key-value list of the event statuses for teams competing at the given event.
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Hash<String, TeamEventStatus>, Integer, Hash)>] Hash<String, TeamEventStatus> data, response status code and response headers
-    def get_event_teams_statuses_with_http_info(opts = {})
+    def get_event_teams_statuses_with_http_info(event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_event_teams_statuses ...'
       end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_event_teams_statuses"
+      end
       # resource path
-      local_var_path = '/event/{event_key}/teams/statuses'
+      local_var_path = '/event/{event_key}/teams/statuses'.sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1076,6 +1249,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1106,22 +1280,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of events in the given year.
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Event>]
-    def get_events_by_year(opts = {})
-      data, _status_code, _headers = get_events_by_year_with_http_info(opts)
+    def get_events_by_year(year, opts = {})
+      data, _status_code, _headers = get_events_by_year_with_http_info(year, opts)
       data
     end
 
     # Gets a list of events in the given year.
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Event>, Integer, Hash)>] Array<Event> data, response status code and response headers
-    def get_events_by_year_with_http_info(opts = {})
+    def get_events_by_year_with_http_info(year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_events_by_year ...'
       end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_events_by_year"
+      end
       # resource path
-      local_var_path = '/events/{year}'
+      local_var_path = '/events/{year}'.sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1130,6 +1312,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1160,22 +1343,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of event keys in the given year.
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_events_by_year_keys(opts = {})
-      data, _status_code, _headers = get_events_by_year_keys_with_http_info(opts)
+    def get_events_by_year_keys(year, opts = {})
+      data, _status_code, _headers = get_events_by_year_keys_with_http_info(year, opts)
       data
     end
 
     # Gets a list of event keys in the given year.
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_events_by_year_keys_with_http_info(opts = {})
+    def get_events_by_year_keys_with_http_info(year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_events_by_year_keys ...'
       end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_events_by_year_keys"
+      end
       # resource path
-      local_var_path = '/events/{year}/keys'
+      local_var_path = '/events/{year}/keys'.sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1184,6 +1375,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1214,22 +1406,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form list of events in the given year.
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<EventSimple>]
-    def get_events_by_year_simple(opts = {})
-      data, _status_code, _headers = get_events_by_year_simple_with_http_info(opts)
+    def get_events_by_year_simple(year, opts = {})
+      data, _status_code, _headers = get_events_by_year_simple_with_http_info(year, opts)
       data
     end
 
     # Gets a short-form list of events in the given year.
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<EventSimple>, Integer, Hash)>] Array<EventSimple> data, response status code and response headers
-    def get_events_by_year_simple_with_http_info(opts = {})
+    def get_events_by_year_simple_with_http_info(year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_events_by_year_simple ...'
       end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_events_by_year_simple"
+      end
       # resource path
-      local_var_path = '/events/{year}/simple'
+      local_var_path = '/events/{year}/simple'.sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1238,6 +1438,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1268,22 +1469,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of awards the given team won at the given event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Award>]
-    def get_team_event_awards(opts = {})
-      data, _status_code, _headers = get_team_event_awards_with_http_info(opts)
+    def get_team_event_awards(team_key, event_key, opts = {})
+      data, _status_code, _headers = get_team_event_awards_with_http_info(team_key, event_key, opts)
       data
     end
 
     # Gets a list of awards the given team won at the given event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Award>, Integer, Hash)>] Array<Award> data, response status code and response headers
-    def get_team_event_awards_with_http_info(opts = {})
+    def get_team_event_awards_with_http_info(team_key, event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_event_awards ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_event_awards"
+      end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_team_event_awards"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/event/{event_key}/awards'
+      local_var_path = '/team/{team_key}/event/{event_key}/awards'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1292,6 +1507,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1322,22 +1538,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of matches for the given team and event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Match>]
-    def get_team_event_matches(opts = {})
-      data, _status_code, _headers = get_team_event_matches_with_http_info(opts)
+    def get_team_event_matches(team_key, event_key, opts = {})
+      data, _status_code, _headers = get_team_event_matches_with_http_info(team_key, event_key, opts)
       data
     end
 
     # Gets a list of matches for the given team and event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Match>, Integer, Hash)>] Array<Match> data, response status code and response headers
-    def get_team_event_matches_with_http_info(opts = {})
+    def get_team_event_matches_with_http_info(team_key, event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_event_matches ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_event_matches"
+      end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_team_event_matches"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/event/{event_key}/matches'
+      local_var_path = '/team/{team_key}/event/{event_key}/matches'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1346,6 +1576,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1376,22 +1607,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of match keys for matches for the given team and event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_team_event_matches_keys(opts = {})
-      data, _status_code, _headers = get_team_event_matches_keys_with_http_info(opts)
+    def get_team_event_matches_keys(team_key, event_key, opts = {})
+      data, _status_code, _headers = get_team_event_matches_keys_with_http_info(team_key, event_key, opts)
       data
     end
 
     # Gets a list of match keys for matches for the given team and event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_team_event_matches_keys_with_http_info(opts = {})
+    def get_team_event_matches_keys_with_http_info(team_key, event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_event_matches_keys ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_event_matches_keys"
+      end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_team_event_matches_keys"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/event/{event_key}/matches/keys'
+      local_var_path = '/team/{team_key}/event/{event_key}/matches/keys'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1400,6 +1645,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1430,22 +1676,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form list of matches for the given team and event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Match>]
-    def get_team_event_matches_simple(opts = {})
-      data, _status_code, _headers = get_team_event_matches_simple_with_http_info(opts)
+    def get_team_event_matches_simple(team_key, event_key, opts = {})
+      data, _status_code, _headers = get_team_event_matches_simple_with_http_info(team_key, event_key, opts)
       data
     end
 
     # Gets a short-form list of matches for the given team and event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Match>, Integer, Hash)>] Array<Match> data, response status code and response headers
-    def get_team_event_matches_simple_with_http_info(opts = {})
+    def get_team_event_matches_simple_with_http_info(team_key, event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_event_matches_simple ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_event_matches_simple"
+      end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_team_event_matches_simple"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/event/{event_key}/matches/simple'
+      local_var_path = '/team/{team_key}/event/{event_key}/matches/simple'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1454,6 +1714,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1484,22 +1745,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets the competition rank and status of the team at the given event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [TeamEventStatus]
-    def get_team_event_status(opts = {})
-      data, _status_code, _headers = get_team_event_status_with_http_info(opts)
+    def get_team_event_status(team_key, event_key, opts = {})
+      data, _status_code, _headers = get_team_event_status_with_http_info(team_key, event_key, opts)
       data
     end
 
     # Gets the competition rank and status of the team at the given event.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param event_key [String] TBA Event Key, eg &#x60;2016nytr&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(TeamEventStatus, Integer, Hash)>] TeamEventStatus data, response status code and response headers
-    def get_team_event_status_with_http_info(opts = {})
+    def get_team_event_status_with_http_info(team_key, event_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_event_status ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_event_status"
+      end
+      # verify the required parameter 'event_key' is set
+      if @api_client.config.client_side_validation && event_key.nil?
+        fail ArgumentError, "Missing the required parameter 'event_key' when calling EventApi.get_team_event_status"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/event/{event_key}/status'
+      local_var_path = '/team/{team_key}/event/{event_key}/status'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'event_key' + '}', event_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1508,6 +1783,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1538,22 +1814,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of all events this team has competed at.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Event>]
-    def get_team_events(opts = {})
-      data, _status_code, _headers = get_team_events_with_http_info(opts)
+    def get_team_events(team_key, opts = {})
+      data, _status_code, _headers = get_team_events_with_http_info(team_key, opts)
       data
     end
 
     # Gets a list of all events this team has competed at.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Event>, Integer, Hash)>] Array<Event> data, response status code and response headers
-    def get_team_events_with_http_info(opts = {})
+    def get_team_events_with_http_info(team_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events'
+      local_var_path = '/team/{team_key}/events'.sub('{' + 'team_key' + '}', team_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1562,6 +1846,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1592,22 +1877,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<Event>]
-    def get_team_events_by_year(opts = {})
-      data, _status_code, _headers = get_team_events_by_year_with_http_info(opts)
+    def get_team_events_by_year(team_key, year, opts = {})
+      data, _status_code, _headers = get_team_events_by_year_with_http_info(team_key, year, opts)
       data
     end
 
     # Gets a list of events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<Event>, Integer, Hash)>] Array<Event> data, response status code and response headers
-    def get_team_events_by_year_with_http_info(opts = {})
+    def get_team_events_by_year_with_http_info(team_key, year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events_by_year ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events_by_year"
+      end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_team_events_by_year"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events/{year}'
+      local_var_path = '/team/{team_key}/events/{year}'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1616,6 +1915,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1646,22 +1946,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of the event keys for events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_team_events_by_year_keys(opts = {})
-      data, _status_code, _headers = get_team_events_by_year_keys_with_http_info(opts)
+    def get_team_events_by_year_keys(team_key, year, opts = {})
+      data, _status_code, _headers = get_team_events_by_year_keys_with_http_info(team_key, year, opts)
       data
     end
 
     # Gets a list of the event keys for events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_team_events_by_year_keys_with_http_info(opts = {})
+    def get_team_events_by_year_keys_with_http_info(team_key, year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events_by_year_keys ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events_by_year_keys"
+      end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_team_events_by_year_keys"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events/{year}/keys'
+      local_var_path = '/team/{team_key}/events/{year}/keys'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1670,6 +1984,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1700,22 +2015,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form list of events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<EventSimple>]
-    def get_team_events_by_year_simple(opts = {})
-      data, _status_code, _headers = get_team_events_by_year_simple_with_http_info(opts)
+    def get_team_events_by_year_simple(team_key, year, opts = {})
+      data, _status_code, _headers = get_team_events_by_year_simple_with_http_info(team_key, year, opts)
       data
     end
 
     # Gets a short-form list of events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<EventSimple>, Integer, Hash)>] Array<EventSimple> data, response status code and response headers
-    def get_team_events_by_year_simple_with_http_info(opts = {})
+    def get_team_events_by_year_simple_with_http_info(team_key, year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events_by_year_simple ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events_by_year_simple"
+      end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_team_events_by_year_simple"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events/{year}/simple'
+      local_var_path = '/team/{team_key}/events/{year}/simple'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1724,6 +2053,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1754,22 +2084,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a list of the event keys for all events this team has competed at.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<String>]
-    def get_team_events_keys(opts = {})
-      data, _status_code, _headers = get_team_events_keys_with_http_info(opts)
+    def get_team_events_keys(team_key, opts = {})
+      data, _status_code, _headers = get_team_events_keys_with_http_info(team_key, opts)
       data
     end
 
     # Gets a list of the event keys for all events this team has competed at.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
-    def get_team_events_keys_with_http_info(opts = {})
+    def get_team_events_keys_with_http_info(team_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events_keys ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events_keys"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events/keys'
+      local_var_path = '/team/{team_key}/events/keys'.sub('{' + 'team_key' + '}', team_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1778,6 +2116,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1808,22 +2147,30 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a short-form list of all events this team has competed at.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<EventSimple>]
-    def get_team_events_simple(opts = {})
-      data, _status_code, _headers = get_team_events_simple_with_http_info(opts)
+    def get_team_events_simple(team_key, opts = {})
+      data, _status_code, _headers = get_team_events_simple_with_http_info(team_key, opts)
       data
     end
 
     # Gets a short-form list of all events this team has competed at.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Array<EventSimple>, Integer, Hash)>] Array<EventSimple> data, response status code and response headers
-    def get_team_events_simple_with_http_info(opts = {})
+    def get_team_events_simple_with_http_info(team_key, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events_simple ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events_simple"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events/simple'
+      local_var_path = '/team/{team_key}/events/simple'.sub('{' + 'team_key' + '}', team_key.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1832,6 +2179,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -1862,22 +2210,36 @@ module TBA API v3 Ruby Client
     end
 
     # Gets a key-value list of the event statuses for events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Hash<String, TeamEventStatus>]
-    def get_team_events_statuses_by_year(opts = {})
-      data, _status_code, _headers = get_team_events_statuses_by_year_with_http_info(opts)
+    def get_team_events_statuses_by_year(team_key, year, opts = {})
+      data, _status_code, _headers = get_team_events_statuses_by_year_with_http_info(team_key, year, opts)
       data
     end
 
     # Gets a key-value list of the event statuses for events this team has competed at in the given year.
+    # @param team_key [String] TBA Team Key, eg &#x60;frc254&#x60;
+    # @param year [Integer] Competition Year (or Season). Must be 4 digits.
     # @param [Hash] opts the optional parameters
+    # @option opts [String] :if_modified_since Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client.
     # @return [Array<(Hash<String, TeamEventStatus>, Integer, Hash)>] Hash<String, TeamEventStatus> data, response status code and response headers
-    def get_team_events_statuses_by_year_with_http_info(opts = {})
+    def get_team_events_statuses_by_year_with_http_info(team_key, year, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: EventApi.get_team_events_statuses_by_year ...'
       end
+      # verify the required parameter 'team_key' is set
+      if @api_client.config.client_side_validation && team_key.nil?
+        fail ArgumentError, "Missing the required parameter 'team_key' when calling EventApi.get_team_events_statuses_by_year"
+      end
+      # verify the required parameter 'year' is set
+      if @api_client.config.client_side_validation && year.nil?
+        fail ArgumentError, "Missing the required parameter 'year' when calling EventApi.get_team_events_statuses_by_year"
+      end
       # resource path
-      local_var_path = '/team/{team_key}/events/{year}/statuses'
+      local_var_path = '/team/{team_key}/events/{year}/statuses'.sub('{' + 'team_key' + '}', team_key.to_s).sub('{' + 'year' + '}', year.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -1886,6 +2248,7 @@ module TBA API v3 Ruby Client
       header_params = opts[:header_params] || {}
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params[:'If-Modified-Since'] = opts[:'if_modified_since'] if !opts[:'if_modified_since'].nil?
 
       # form parameters
       form_params = opts[:form_params] || {}

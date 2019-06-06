@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 ## get_district_events
 
-> Array&lt;Event&gt; get_district_events
+> Array&lt;Event&gt; get_district_events(district_key, opts)
 
 
 
@@ -39,9 +39,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_events
+  result = api_instance.get_district_events(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events: #{e}"
@@ -50,7 +54,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -68,7 +76,7 @@ This endpoint does not need any parameter.
 
 ## get_district_events_keys
 
-> Array&lt;String&gt; get_district_events_keys
+> Array&lt;String&gt; get_district_events_keys(district_key, opts)
 
 
 
@@ -88,9 +96,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_events_keys
+  result = api_instance.get_district_events_keys(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events_keys: #{e}"
@@ -99,7 +111,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -117,7 +133,7 @@ This endpoint does not need any parameter.
 
 ## get_district_events_simple
 
-> Array&lt;EventSimple&gt; get_district_events_simple(district_key)
+> Array&lt;EventSimple&gt; get_district_events_simple(district_key, opts)
 
 
 
@@ -138,9 +154,12 @@ end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
 district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_events_simple(district_key)
+  result = api_instance.get_district_events_simple(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_events_simple: #{e}"
@@ -153,6 +172,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -170,7 +190,7 @@ Name | Type | Description  | Notes
 
 ## get_district_rankings
 
-> Array&lt;DistrictRanking&gt; get_district_rankings
+> Array&lt;DistrictRanking&gt; get_district_rankings(district_key, opts)
 
 
 
@@ -190,9 +210,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_rankings
+  result = api_instance.get_district_rankings(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_rankings: #{e}"
@@ -201,7 +225,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -219,7 +247,7 @@ This endpoint does not need any parameter.
 
 ## get_district_teams
 
-> Array&lt;Team&gt; get_district_teams
+> Array&lt;Team&gt; get_district_teams(district_key, opts)
 
 
 
@@ -239,9 +267,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_teams
+  result = api_instance.get_district_teams(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_teams: #{e}"
@@ -250,7 +282,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -268,7 +304,7 @@ This endpoint does not need any parameter.
 
 ## get_district_teams_keys
 
-> Array&lt;String&gt; get_district_teams_keys
+> Array&lt;String&gt; get_district_teams_keys(district_key, opts)
 
 
 
@@ -288,9 +324,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_teams_keys
+  result = api_instance.get_district_teams_keys(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_teams_keys: #{e}"
@@ -299,7 +339,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -317,7 +361,7 @@ This endpoint does not need any parameter.
 
 ## get_district_teams_simple
 
-> Array&lt;TeamSimple&gt; get_district_teams_simple
+> Array&lt;TeamSimple&gt; get_district_teams_simple(district_key, opts)
 
 
 
@@ -337,9 +381,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+district_key = 'district_key_example' # String | TBA District Key, eg `2016fim`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_district_teams_simple
+  result = api_instance.get_district_teams_simple(district_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_district_teams_simple: #{e}"
@@ -348,7 +396,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **district_key** | **String**| TBA District Key, eg &#x60;2016fim&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -366,7 +418,7 @@ This endpoint does not need any parameter.
 
 ## get_districts_by_year
 
-> Array&lt;DistrictList&gt; get_districts_by_year
+> Array&lt;DistrictList&gt; get_districts_by_year(year, opts)
 
 
 
@@ -386,9 +438,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+year = 56 # Integer | Competition Year (or Season). Must be 4 digits.
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_districts_by_year
+  result = api_instance.get_districts_by_year(year, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_districts_by_year: #{e}"
@@ -397,7 +453,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Integer**| Competition Year (or Season). Must be 4 digits. | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -415,7 +475,7 @@ This endpoint does not need any parameter.
 
 ## get_event_district_points
 
-> EventDistrictPoints get_event_district_points
+> EventDistrictPoints get_event_district_points(event_key, opts)
 
 
 
@@ -435,9 +495,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+event_key = 'event_key_example' # String | TBA Event Key, eg `2016nytr`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_event_district_points
+  result = api_instance.get_event_district_points(event_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_event_district_points: #{e}"
@@ -446,7 +510,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **event_key** | **String**| TBA Event Key, eg &#x60;2016nytr&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
@@ -464,7 +532,7 @@ This endpoint does not need any parameter.
 
 ## get_team_districts
 
-> Array&lt;DistrictList&gt; get_team_districts
+> Array&lt;DistrictList&gt; get_team_districts(team_key, opts)
 
 
 
@@ -484,9 +552,13 @@ TBA API v3 Ruby Client.configure do |config|
 end
 
 api_instance = TBA API v3 Ruby Client::DistrictApi.new
+team_key = 'team_key_example' # String | TBA Team Key, eg `frc254`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
 
 begin
-  result = api_instance.get_team_districts
+  result = api_instance.get_team_districts(team_key, opts)
   p result
 rescue TBA API v3 Ruby Client::ApiError => e
   puts "Exception when calling DistrictApi->get_team_districts: #{e}"
@@ -495,7 +567,11 @@ end
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **team_key** | **String**| TBA Team Key, eg &#x60;frc254&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 
