@@ -220,10 +220,6 @@ module TBA API v3 Ruby Client
         invalid_properties.push('invalid value for "name", name cannot be nil.')
       end
 
-      if @rookie_year.nil?
-        invalid_properties.push('invalid value for "rookie_year", rookie_year cannot be nil.')
-      end
-
       invalid_properties
     end
 
@@ -233,7 +229,6 @@ module TBA API v3 Ruby Client
       return false if @key.nil?
       return false if @team_number.nil?
       return false if @name.nil?
-      return false if @rookie_year.nil?
       true
     end
 

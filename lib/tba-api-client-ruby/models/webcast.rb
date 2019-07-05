@@ -110,7 +110,7 @@ module TBA API v3 Ruby Client
     # @return true if the model is valid
     def valid?
       return false if @type.nil?
-      type_validator = EnumAttributeValidator.new('String', ["youtube", "twitch", "ustream", "iframe", "html5", "rtmp", "livestream"])
+      type_validator = EnumAttributeValidator.new('String', ["youtube", "twitch", "ustream", "iframe", "html5", "rtmp", "livestream", "direct_link"])
       return false unless type_validator.valid?(@type)
       return false if @channel.nil?
       true
@@ -119,7 +119,7 @@ module TBA API v3 Ruby Client
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] type Object to be assigned
     def type=(type)
-      validator = EnumAttributeValidator.new('String', ["youtube", "twitch", "ustream", "iframe", "html5", "rtmp", "livestream"])
+      validator = EnumAttributeValidator.new('String', ["youtube", "twitch", "ustream", "iframe", "html5", "rtmp", "livestream", "direct_link"])
       unless validator.valid?(type)
         fail ArgumentError, "invalid value for \"type\", must be one of #{validator.allowable_values}."
       end
