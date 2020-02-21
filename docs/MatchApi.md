@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**get_match**](MatchApi.md#get_match) | **GET** /match/{match_key} | 
 [**get_match_simple**](MatchApi.md#get_match_simple) | **GET** /match/{match_key}/simple | 
 [**get_match_timeseries**](MatchApi.md#get_match_timeseries) | **GET** /match/{match_key}/timeseries | 
+[**get_match_zebra**](MatchApi.md#get_match_zebra) | **GET** /match/{match_key}/zebra_motionworks | 
 [**get_team_event_matches**](MatchApi.md#get_team_event_matches) | **GET** /team/{team_key}/event/{event_key}/matches | 
 [**get_team_event_matches_keys**](MatchApi.md#get_team_event_matches_keys) | **GET** /team/{team_key}/event/{event_key}/matches/keys | 
 [**get_team_event_matches_simple**](MatchApi.md#get_team_event_matches_simple) | **GET** /team/{team_key}/event/{event_key}/matches/simple | 
@@ -408,6 +409,63 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Array&lt;Object&gt;**
+
+### Authorization
+
+[apiKey](../README.md#apiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## get_match_zebra
+
+> Zebra get_match_zebra(match_key, opts)
+
+
+
+Gets Zebra MotionWorks data for a Match for the given match key.
+
+### Example
+
+```ruby
+# load the gem
+require 'tba-api-client-ruby'
+# setup authorization
+TBA API v3 Ruby Client.configure do |config|
+  # Configure API key authorization: apiKey
+  config.api_key['X-TBA-Auth-Key'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['X-TBA-Auth-Key'] = 'Bearer'
+end
+
+api_instance = TBA API v3 Ruby Client::MatchApi.new
+match_key = 'match_key_example' # String | TBA Match Key, eg `2016nytr_qm1`
+opts = {
+  if_modified_since: 'if_modified_since_example' # String | Value of the `Last-Modified` header in the most recently cached response by the client.
+}
+
+begin
+  result = api_instance.get_match_zebra(match_key, opts)
+  p result
+rescue TBA API v3 Ruby Client::ApiError => e
+  puts "Exception when calling MatchApi->get_match_zebra: #{e}"
+end
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **match_key** | **String**| TBA Match Key, eg &#x60;2016nytr_qm1&#x60; | 
+ **if_modified_since** | **String**| Value of the &#x60;Last-Modified&#x60; header in the most recently cached response by the client. | [optional] 
+
+### Return type
+
+[**Zebra**](Zebra.md)
 
 ### Authorization
 

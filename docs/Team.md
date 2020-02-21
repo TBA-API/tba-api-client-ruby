@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **team_number** | **Integer** | Official team number issued by FIRST. | 
 **nickname** | **String** | Team nickname provided by FIRST. | [optional] 
 **name** | **String** | Official long name registered with FIRST. | 
+**school_name** | **String** | Name of team school or affilited group registered with FIRST. | [optional] 
 **city** | **String** | City of team derived from parsing the address registered with FIRST. | [optional] 
 **state_prov** | **String** | State of team derived from parsing the address registered with FIRST. | [optional] 
 **country** | **String** | Country of team derived from parsing the address registered with FIRST. | [optional] 
@@ -32,6 +33,7 @@ instance = TBA API v3 Ruby Client::Team.new(key: null,
                                  team_number: null,
                                  nickname: null,
                                  name: null,
+                                 school_name: null,
                                  city: null,
                                  state_prov: null,
                                  country: null,

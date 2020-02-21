@@ -4,9 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**key** | **String** | TBA identifier for this media. | 
 **type** | **String** | String type of the media element. | 
-**foreign_key** | **String** | The key used to identify this media on the media site. | [optional] 
+**foreign_key** | **String** | The key used to identify this media on the media site. | 
 **details** | [**Object**](.md) | If required, a JSON dict of additional media information. | [optional] 
 **preferred** | **Boolean** | True if the media is of high quality. | [optional] 
 **direct_url** | **String** | Direct URL to the media. | [optional] 
@@ -17,8 +16,7 @@ Name | Type | Description | Notes
 ```ruby
 require 'TBA API v3 Ruby Client'
 
-instance = TBA API v3 Ruby Client::Media.new(key: null,
-                                 type: null,
+instance = TBA API v3 Ruby Client::Media.new(type: null,
                                  foreign_key: null,
                                  details: null,
                                  preferred: null,
