@@ -20,6 +20,9 @@ module TBA API v3 Ruby Client
     # Type specific channel information. May be the YouTube stream, or Twitch channel name. In the case of iframe types, contains HTML to embed the stream in an HTML iframe.
     attr_accessor :channel
 
+    # The date for the webcast in `yyyy-mm-dd` format. May be null.
+    attr_accessor :date
+
     # File identification as may be required for some types. May be null.
     attr_accessor :file
 
@@ -50,6 +53,7 @@ module TBA API v3 Ruby Client
       {
         :'type' => :'type',
         :'channel' => :'channel',
+        :'date' => :'date',
         :'file' => :'file'
       }
     end
@@ -59,6 +63,7 @@ module TBA API v3 Ruby Client
       {
         :'type' => :'String',
         :'channel' => :'String',
+        :'date' => :'String',
         :'file' => :'String'
       }
     end
@@ -90,6 +95,10 @@ module TBA API v3 Ruby Client
 
       if attributes.key?(:'channel')
         self.channel = attributes[:'channel']
+      end
+
+      if attributes.key?(:'date')
+        self.date = attributes[:'date']
       end
 
       if attributes.key?(:'file')
@@ -139,6 +148,7 @@ module TBA API v3 Ruby Client
       self.class == o.class &&
           type == o.type &&
           channel == o.channel &&
+          date == o.date &&
           file == o.file
     end
 
@@ -151,7 +161,7 @@ module TBA API v3 Ruby Client
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [type, channel, file].hash
+      [type, channel, date, file].hash
     end
 
     # Builds the object from hash
