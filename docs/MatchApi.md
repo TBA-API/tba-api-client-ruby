@@ -33,7 +33,7 @@ Gets an array of Match Keys for the given event key that have timeseries data. R
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -90,7 +90,7 @@ Gets a list of matches for the given event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -147,7 +147,7 @@ Gets a list of match keys for the given event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -204,7 +204,7 @@ Gets a short-form list of matches for the given event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -261,7 +261,7 @@ Gets a `Match` object for the given match key.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -318,7 +318,7 @@ Gets a short-form `Match` object for the given match key.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -375,7 +375,7 @@ Gets an array of game-specific Match Timeseries objects for the given match key 
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -432,7 +432,7 @@ Gets Zebra MotionWorks data for a Match for the given match key.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -489,7 +489,7 @@ Gets a list of matches for the given team and event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -548,7 +548,7 @@ Gets a list of match keys for matches for the given team and event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -607,7 +607,7 @@ Gets a short-form list of matches for the given team and event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -666,7 +666,7 @@ Gets a list of matches for the given team and year.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -725,7 +725,7 @@ Gets a list of match keys for matches for the given team and year.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -784,7 +784,7 @@ Gets a short-form list of matches for the given team and year.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey

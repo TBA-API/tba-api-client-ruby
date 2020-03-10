@@ -20,7 +20,7 @@ Returns API status, and TBA status information.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey

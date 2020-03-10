@@ -40,7 +40,7 @@ Gets a list of events in the given district.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -97,7 +97,7 @@ Gets a list of event keys for events in the given district.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -154,7 +154,7 @@ Gets a short-form list of events in the given district.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -211,7 +211,7 @@ Gets a list of team district rankings for the given district.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -268,7 +268,7 @@ Gets a list of `Team` objects that competed in events in the given district.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -325,7 +325,7 @@ Gets a list of `Team` objects that competed in events in the given district.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -382,7 +382,7 @@ Gets a short-form list of `Team` objects that competed in events in the given di
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -439,7 +439,7 @@ Gets a list of `Team` objects that competed in the given event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -496,7 +496,7 @@ Gets a list of `Team` keys that competed in the given event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -553,7 +553,7 @@ Gets a short-form list of `Team` objects that competed in the given event.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -610,7 +610,7 @@ Gets a key-value list of the event statuses for teams competing at the given eve
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -667,7 +667,7 @@ Gets a list of events in the given year.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -724,7 +724,7 @@ Gets a list of event keys in the given year.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -781,7 +781,7 @@ Gets a short-form list of events in the given year.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -838,7 +838,7 @@ Gets a key-value list of the event statuses for events this team has competed at
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -897,7 +897,7 @@ Gets a list of `Team` objects, paginated in groups of 500.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -954,7 +954,7 @@ Gets a list of `Team` objects that competed in the given year, paginated in grou
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -1013,7 +1013,7 @@ Gets a list Team Keys that competed in the given year, paginated in groups of 50
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -1072,7 +1072,7 @@ Gets a list of short form `Team_Simple` objects that competed in the given year,
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -1131,7 +1131,7 @@ Gets a list of Team keys, paginated in groups of 500. (Note, each page will not 
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
@@ -1188,7 +1188,7 @@ Gets a list of short form `Team_Simple` objects, paginated in groups of 500.
 
 ```ruby
 # load the gem
-require 'tba-api-client-ruby'
+require 'tba-api-v3client'
 # setup authorization
 TBA API v3 Ruby Client.configure do |config|
   # Configure API key authorization: apiKey
